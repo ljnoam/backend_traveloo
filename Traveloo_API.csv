@@ -1,0 +1,3258 @@
+Nom Endpoint;Méthode;URL;Auth ?;Rôle;Utilité;Données en entrée (JSON);Réponse (JSON)
+Register;POST;/auth/register;Non;-;Créer un compte utilisateur;"{""email"": ""user@example.com"", ""password"": ""motdepasse""}";"{""user"": {...}, ""session"": {...}}"
+Login;POST;/auth/login;Non;-;Connexion utilisateur;"{""email"": ""user@example.com"", ""password"": ""motdepasse""}";"{
+    ""user"": {
+        ""id"": ""35e98231-62af-4c8a-b5fb-5d16d5b96ada"",
+        ""app_metadata"": {
+            ""provider"": ""email"",
+            ""providers"": [
+                ""email""
+            ]
+        },
+        ""user_metadata"": {
+            ""email"": ""ljnoam@gmail.com"",
+            ""email_verified"": true,
+            ""phone_verified"": false,
+            ""sub"": ""35e98231-62af-4c8a-b5fb-5d16d5b96ada""
+        },
+        ""aud"": ""authenticated"",
+        ""confirmation_sent_at"": ""2025-04-29T20:26:09.115294Z"",
+        ""recovery_sent_at"": null,
+        ""email_change_sent_at"": null,
+        ""new_email"": null,
+        ""new_phone"": null,
+        ""invited_at"": null,
+        ""action_link"": null,
+        ""email"": ""ljnoam@gmail.com"",
+        ""phone"": """",
+        ""created_at"": ""2025-04-29T20:26:09.092558Z"",
+        ""confirmed_at"": ""2025-04-29T20:26:27.663787Z"",
+        ""email_confirmed_at"": ""2025-04-29T20:26:27.663787Z"",
+        ""phone_confirmed_at"": null,
+        ""last_sign_in_at"": ""2025-05-29T16:15:10.795946Z"",
+        ""role"": ""authenticated"",
+        ""updated_at"": ""2025-05-29T16:15:10.797642Z"",
+        ""identities"": [
+            {
+                ""id"": ""35e98231-62af-4c8a-b5fb-5d16d5b96ada"",
+                ""identity_id"": ""037d0872-5937-4486-a325-c0338b04a9de"",
+                ""user_id"": ""35e98231-62af-4c8a-b5fb-5d16d5b96ada"",
+                ""identity_data"": {
+                    ""email"": ""ljnoam@gmail.com"",
+                    ""email_verified"": true,
+                    ""phone_verified"": false,
+                    ""sub"": ""35e98231-62af-4c8a-b5fb-5d16d5b96ada""
+                },
+                ""provider"": ""email"",
+                ""created_at"": ""2025-04-29T20:26:09.110932Z"",
+                ""last_sign_in_at"": ""2025-04-29T20:26:09.110865Z"",
+                ""updated_at"": ""2025-04-29T20:26:09.110932Z""
+            }
+        ],
+        ""is_anonymous"": false,
+        ""factors"": null
+    },
+    ""session"": {
+        ""provider_token"": null,
+        ""provider_refresh_token"": null,
+        ""access_token"": ""eyJhbGciOiJIUzI1NiIsImtpZCI6IjNLNm44alRCMXhyQ1QwWW8iLCJ0eXAiOiJKV1QifQ.eyJpc3MiOiJodHRwczovL2FheXhhcGNnaGx4ZHVveHNpZ2llLnN1cGFiYXNlLmNvL2F1dGgvdjEiLCJzdWIiOiIzNWU5ODIzMS02MmFmLTRjOGEtYjVmYi01ZDE2ZDViOTZhZGEiLCJhdWQiOiJhdXRoZW50aWNhdGVkIiwiZXhwIjoxNzQ4NTM4OTEwLCJpYXQiOjE3NDg1MzUzMTAsImVtYWlsIjoibGpub2FtQGdtYWlsLmNvbSIsInBob25lIjoiIiwiYXBwX21ldGFkYXRhIjp7InByb3ZpZGVyIjoiZW1haWwiLCJwcm92aWRlcnMiOlsiZW1haWwiXX0sInVzZXJfbWV0YWRhdGEiOnsiZW1haWwiOiJsam5vYW1AZ21haWwuY29tIiwiZW1haWxfdmVyaWZpZWQiOnRydWUsInBob25lX3ZlcmlmaWVkIjpmYWxzZSwic3ViIjoiMzVlOTgyMzEtNjJhZi00YzhhLWI1ZmItNWQxNmQ1Yjk2YWRhIn0sInJvbGUiOiJhdXRoZW50aWNhdGVkIiwiYWFsIjoiYWFsMSIsImFtciI6W3sibWV0aG9kIjoicGFzc3dvcmQiLCJ0aW1lc3RhbXAiOjE3NDg1MzUzMTB9XSwic2Vzc2lvbl9pZCI6IjlkYTgzNDQ3LWZmMDItNGIxMy04YWE3LWE2N2EzYzI2ODEzNCIsImlzX2Fub255bW91cyI6ZmFsc2V9.1OJ57qZ3tMwOvBvnryLMN2ZKwslGasbnHxW9Zw_cnWQ"",
+        ""refresh_token"": ""cycoxnu7nffx"",
+        ""expires_in"": 3600,
+        ""expires_at"": 1748538910,
+        ""token_type"": ""bearer"",
+        ""user"": {
+            ""id"": ""35e98231-62af-4c8a-b5fb-5d16d5b96ada"",
+            ""app_metadata"": {
+                ""provider"": ""email"",
+                ""providers"": [
+                    ""email""
+                ]
+            },
+            ""user_metadata"": {
+                ""email"": ""ljnoam@gmail.com"",
+                ""email_verified"": true,
+                ""phone_verified"": false,
+                ""sub"": ""35e98231-62af-4c8a-b5fb-5d16d5b96ada""
+            },
+            ""aud"": ""authenticated"",
+            ""confirmation_sent_at"": ""2025-04-29T20:26:09.115294Z"",
+            ""recovery_sent_at"": null,
+            ""email_change_sent_at"": null,
+            ""new_email"": null,
+            ""new_phone"": null,
+            ""invited_at"": null,
+            ""action_link"": null,
+            ""email"": ""ljnoam@gmail.com"",
+            ""phone"": """",
+            ""created_at"": ""2025-04-29T20:26:09.092558Z"",
+            ""confirmed_at"": ""2025-04-29T20:26:27.663787Z"",
+            ""email_confirmed_at"": ""2025-04-29T20:26:27.663787Z"",
+            ""phone_confirmed_at"": null,
+            ""last_sign_in_at"": ""2025-05-29T16:15:10.795946Z"",
+            ""role"": ""authenticated"",
+            ""updated_at"": ""2025-05-29T16:15:10.797642Z"",
+            ""identities"": [
+                {
+                    ""id"": ""35e98231-62af-4c8a-b5fb-5d16d5b96ada"",
+                    ""identity_id"": ""037d0872-5937-4486-a325-c0338b04a9de"",
+                    ""user_id"": ""35e98231-62af-4c8a-b5fb-5d16d5b96ada"",
+                    ""identity_data"": {
+                        ""email"": ""ljnoam@gmail.com"",
+                        ""email_verified"": true,
+                        ""phone_verified"": false,
+                        ""sub"": ""35e98231-62af-4c8a-b5fb-5d16d5b96ada""
+                    },
+                    ""provider"": ""email"",
+                    ""created_at"": ""2025-04-29T20:26:09.110932Z"",
+                    ""last_sign_in_at"": ""2025-04-29T20:26:09.110865Z"",
+                    ""updated_at"": ""2025-04-29T20:26:09.110932Z""
+                }
+            ],
+            ""is_anonymous"": false,
+            ""factors"": null
+        }
+    }
+}"
+Profil utilisateur;GET;/auth/me;Oui;-;Récupérer le profil de l'utilisateur connecté;Rien;"{
+    ""id"": ""35e98231-62af-4c8a-b5fb-5d16d5b96ada"",
+    ""email"": ""ljnoam@gmail.com"",
+    ""created_at"": ""2025-04-29T20:26:09.090882+00:00"",
+    ""full_name"": ""Noam lj"",
+    ""avatar_url"": ""https://i.imgur.com/yoFace.jpg"",
+    ""role"": ""admin"",
+    ""last_login"": ""2025-05-29T16:15:10.893791+00:00""
+}"
+Update profil;PUT;/auth/update-profile;Oui;-;Mettre à jour les informations du profil utilisateur;"{""full_name"": ""Jean"", ""avatar_url"": ""https://...""}";"{
+    ""detail"": [
+        {
+            ""type"": ""missing"",
+            ""loc"": [
+                ""body"",
+                ""avatar_url""
+            ],
+            ""msg"": ""Field required"",
+            ""input"": {
+                ""full_name"": ""Nono LJ""
+            },
+            ""url"": ""https://errors.pydantic.dev/2.7/v/missing""
+        }
+    ]
+}"
+Recherche vols;POST;/api/search;Non;-;Rechercher des vols avec TravelPayouts;"{""origin"": ""PAR"", ""destination"": ""LIS"", ""departure_date"": ""2025-08-01"", ""return_date"": ""2025-08-15"", ""class_"": ""Y"", ""adults"": 1, ""children"": 0, ""infants"": 0}";"[
+    {
+        ""airline"": ""KL"",
+        ""price"": 658,
+        ""duration"": 675,
+        ""stops"": 1,
+        ""departure_time"": ""10:15"",
+        ""arrival_time"": ""11:55"",
+        ""booking_link"": 4800032,
+        ""handbags"": [
+            ""1PC"",
+            ""1PC""
+        ],
+        ""baggage"": [
+            """",
+            """"
+        ],
+        ""stopovers"": [
+            {
+                ""stop_airport"": ""AMS"",
+                ""duration_minutes"": 3900
+            },
+            {
+                ""stop_airport"": ""AMS"",
+                ""duration_minutes"": 6000
+            }
+        ],
+        ""flight_numbers"": [
+            ""1406"",
+            ""1583"",
+            ""1578"",
+            ""1341""
+        ],
+        ""aircrafts"": [
+            ""73H"",
+            ""32Q"",
+            ""73H"",
+            ""321""
+        ],
+        ""payment_methods"": [
+            ""card""
+        ]
+    },
+    {
+        ""airline"": ""KL"",
+        ""price"": 664,
+        ""duration"": 650,
+        ""stops"": 1,
+        ""departure_time"": ""10:15"",
+        ""arrival_time"": ""18:10"",
+        ""booking_link"": 4800034,
+        ""handbags"": [
+            ""1PC"",
+            ""1PC""
+        ],
+        ""baggage"": [
+            """",
+            """"
+        ],
+        ""stopovers"": [
+            {
+                ""stop_airport"": ""AMS"",
+                ""duration_minutes"": 3900
+            },
+            {
+                ""stop_airport"": ""AMS"",
+                ""duration_minutes"": 4500
+            }
+        ],
+        ""flight_numbers"": [
+            ""1406"",
+            ""1583"",
+            ""1580"",
+            ""2292""
+        ],
+        ""aircrafts"": [
+            ""73H"",
+            ""32Q"",
+            ""73J"",
+            ""223""
+        ],
+        ""payment_methods"": [
+            ""card""
+        ]
+    },
+    {
+        ""airline"": ""KL"",
+        ""price"": 681,
+        ""duration"": 635,
+        ""stops"": 1,
+        ""departure_time"": ""10:15"",
+        ""arrival_time"": ""21:50"",
+        ""booking_link"": 4800041,
+        ""handbags"": [
+            ""1PC"",
+            ""1PC""
+        ],
+        ""baggage"": [
+            """",
+            """"
+        ],
+        ""stopovers"": [
+            {
+                ""stop_airport"": ""AMS"",
+                ""duration_minutes"": 3900
+            },
+            {
+                ""stop_airport"": ""AMS"",
+                ""duration_minutes"": 2700
+            }
+        ],
+        ""flight_numbers"": [
+            ""1406"",
+            ""1583"",
+            ""1584"",
+            ""1441""
+        ],
+        ""aircrafts"": [
+            ""73H"",
+            ""32Q"",
+            ""32Q"",
+            ""320""
+        ],
+        ""payment_methods"": [
+            ""card""
+        ]
+    },
+    {
+        ""airline"": ""KL"",
+        ""price"": 780,
+        ""duration"": 665,
+        ""stops"": 1,
+        ""departure_time"": ""14:30"",
+        ""arrival_time"": ""11:55"",
+        ""booking_link"": 4800043,
+        ""handbags"": [
+            ""1PC"",
+            ""1PC""
+        ],
+        ""baggage"": [
+            """",
+            """"
+        ],
+        ""stopovers"": [
+            {
+                ""stop_airport"": ""AMS"",
+                ""duration_minutes"": 2700
+            },
+            {
+                ""stop_airport"": ""AMS"",
+                ""duration_minutes"": 6000
+            }
+        ],
+        ""flight_numbers"": [
+            ""2439"",
+            ""1585"",
+            ""1578"",
+            ""1341""
+        ],
+        ""aircrafts"": [
+            ""223"",
+            ""73H"",
+            ""73H"",
+            ""321""
+        ],
+        ""payment_methods"": [
+            ""card""
+        ]
+    },
+    {
+        ""airline"": ""KL"",
+        ""price"": 786,
+        ""duration"": 640,
+        ""stops"": 1,
+        ""departure_time"": ""14:30"",
+        ""arrival_time"": ""18:10"",
+        ""booking_link"": 4800044,
+        ""handbags"": [
+            ""1PC"",
+            ""1PC""
+        ],
+        ""baggage"": [
+            """",
+            """"
+        ],
+        ""stopovers"": [
+            {
+                ""stop_airport"": ""AMS"",
+                ""duration_minutes"": 2700
+            },
+            {
+                ""stop_airport"": ""AMS"",
+                ""duration_minutes"": 4500
+            }
+        ],
+        ""flight_numbers"": [
+            ""2439"",
+            ""1585"",
+            ""1580"",
+            ""2292""
+        ],
+        ""aircrafts"": [
+            ""223"",
+            ""73H"",
+            ""73J"",
+            ""223""
+        ],
+        ""payment_methods"": [
+            ""card""
+        ]
+    },
+    {
+        ""airline"": ""KL"",
+        ""price"": 803,
+        ""duration"": 625,
+        ""stops"": 1,
+        ""departure_time"": ""14:30"",
+        ""arrival_time"": ""21:50"",
+        ""booking_link"": 4800045,
+        ""handbags"": [
+            ""1PC"",
+            ""1PC""
+        ],
+        ""baggage"": [
+            """",
+            """"
+        ],
+        ""stopovers"": [
+            {
+                ""stop_airport"": ""AMS"",
+                ""duration_minutes"": 2700
+            },
+            {
+                ""stop_airport"": ""AMS"",
+                ""duration_minutes"": 2700
+            }
+        ],
+        ""flight_numbers"": [
+            ""2439"",
+            ""1585"",
+            ""1584"",
+            ""1441""
+        ],
+        ""aircrafts"": [
+            ""223"",
+            ""73H"",
+            ""32Q"",
+            ""320""
+        ],
+        ""payment_methods"": [
+            ""card""
+        ]
+    },
+    {
+        ""airline"": ""KL"",
+        ""price"": 816,
+        ""duration"": 715,
+        ""stops"": 1,
+        ""departure_time"": ""17:50"",
+        ""arrival_time"": ""11:55"",
+        ""booking_link"": 4800046,
+        ""handbags"": [
+            ""1PC"",
+            ""1PC""
+        ],
+        ""baggage"": [
+            """",
+            """"
+        ],
+        ""stopovers"": [
+            {
+                ""stop_airport"": ""AMS"",
+                ""duration_minutes"": 5700
+            },
+            {
+                ""stop_airport"": ""AMS"",
+                ""duration_minutes"": 6000
+            }
+        ],
+        ""flight_numbers"": [
+            ""1440"",
+            ""1587"",
+            ""1578"",
+            ""1341""
+        ],
+        ""aircrafts"": [
+            ""320"",
+            ""73H"",
+            ""73H"",
+            ""321""
+        ],
+        ""payment_methods"": [
+            ""card""
+        ]
+    },
+    {
+        ""airline"": ""KL"",
+        ""price"": 822,
+        ""duration"": 690,
+        ""stops"": 1,
+        ""departure_time"": ""17:50"",
+        ""arrival_time"": ""18:10"",
+        ""booking_link"": 4800047,
+        ""handbags"": [
+            ""1PC"",
+            ""1PC""
+        ],
+        ""baggage"": [
+            """",
+            """"
+        ],
+        ""stopovers"": [
+            {
+                ""stop_airport"": ""AMS"",
+                ""duration_minutes"": 5700
+            },
+            {
+                ""stop_airport"": ""AMS"",
+                ""duration_minutes"": 4500
+            }
+        ],
+        ""flight_numbers"": [
+            ""1440"",
+            ""1587"",
+            ""1580"",
+            ""2292""
+        ],
+        ""aircrafts"": [
+            ""320"",
+            ""73H"",
+            ""73J"",
+            ""223""
+        ],
+        ""payment_methods"": [
+            ""card""
+        ]
+    },
+    {
+        ""airline"": ""KL"",
+        ""price"": 840,
+        ""duration"": 675,
+        ""stops"": 1,
+        ""departure_time"": ""17:50"",
+        ""arrival_time"": ""21:50"",
+        ""booking_link"": 4800048,
+        ""handbags"": [
+            ""1PC"",
+            ""1PC""
+        ],
+        ""baggage"": [
+            """",
+            """"
+        ],
+        ""stopovers"": [
+            {
+                ""stop_airport"": ""AMS"",
+                ""duration_minutes"": 5700
+            },
+            {
+                ""stop_airport"": ""AMS"",
+                ""duration_minutes"": 2700
+            }
+        ],
+        ""flight_numbers"": [
+            ""1440"",
+            ""1587"",
+            ""1584"",
+            ""1441""
+        ],
+        ""aircrafts"": [
+            ""320"",
+            ""73H"",
+            ""32Q"",
+            ""320""
+        ],
+        ""payment_methods"": [
+            ""card""
+        ]
+    },
+    {
+        ""airline"": ""U2"",
+        ""price"": 486,
+        ""duration"": 325,
+        ""stops"": 1,
+        ""departure_time"": ""17:00"",
+        ""arrival_time"": ""23:20"",
+        ""booking_link"": 8600000,
+        ""handbags"": [
+            ""0PCx20x36x45""
+        ],
+        ""baggage"": [
+            """"
+        ],
+        ""stopovers"": [],
+        ""flight_numbers"": [
+            ""4593"",
+            ""4594""
+        ],
+        ""aircrafts"": [
+            ""320"",
+            ""320""
+        ],
+        ""payment_methods"": [
+            ""card""
+        ]
+    },
+    {
+        ""airline"": ""LX"",
+        ""price"": 508,
+        ""duration"": 1280,
+        ""stops"": 1,
+        ""departure_time"": ""14:55"",
+        ""arrival_time"": ""18:50"",
+        ""booking_link"": 12300000,
+        ""handbags"": [
+            ""1PC8x40x23x55"",
+            ""1PC7x36x23x55""
+        ],
+        ""baggage"": [
+            """",
+            """"
+        ],
+        ""stopovers"": [
+            {
+                ""stop_airport"": ""ZRH"",
+                ""duration_minutes"": 18600
+            },
+            {
+                ""stop_airport"": ""ZRH"",
+                ""duration_minutes"": 27300
+            }
+        ],
+        ""flight_numbers"": [
+            ""0639"",
+            ""2082"",
+            ""2083"",
+            ""0644""
+        ],
+        ""aircrafts"": [
+            ""223"",
+            ""32N"",
+            ""32N"",
+            ""32B""
+        ],
+        ""payment_methods"": [
+            ""card""
+        ]
+    },
+    {
+        ""airline"": ""LX"",
+        ""price"": 591,
+        ""duration"": 1255,
+        ""stops"": 1,
+        ""departure_time"": ""06:45"",
+        ""arrival_time"": ""18:50"",
+        ""booking_link"": 12300001,
+        ""handbags"": [
+            ""1PC8x40x23x55"",
+            ""1PC7x36x23x55""
+        ],
+        ""baggage"": [
+            """",
+            """"
+        ],
+        ""stopovers"": [
+            {
+                ""stop_airport"": ""ZRH"",
+                ""duration_minutes"": 17400
+            },
+            {
+                ""stop_airport"": ""ZRH"",
+                ""duration_minutes"": 27300
+            }
+        ],
+        ""flight_numbers"": [
+            ""0647"",
+            ""2084"",
+            ""2083"",
+            ""0644""
+        ],
+        ""aircrafts"": [
+            ""223"",
+            ""321"",
+            ""32N"",
+            ""32B""
+        ],
+        ""payment_methods"": [
+            ""card""
+        ]
+    },
+    {
+        ""airline"": ""LX"",
+        ""price"": 613,
+        ""duration"": 995,
+        ""stops"": 1,
+        ""departure_time"": ""14:55"",
+        ""arrival_time"": ""14:05"",
+        ""booking_link"": 12300002,
+        ""handbags"": [
+            ""1PC8x40x23x55"",
+            ""1PC7x36x23x55""
+        ],
+        ""baggage"": [
+            """",
+            """"
+        ],
+        ""stopovers"": [
+            {
+                ""stop_airport"": ""ZRH"",
+                ""duration_minutes"": 18600
+            },
+            {
+                ""stop_airport"": ""ZRH"",
+                ""duration_minutes"": 10200
+            }
+        ],
+        ""flight_numbers"": [
+            ""0639"",
+            ""2082"",
+            ""2083"",
+            ""0638""
+        ],
+        ""aircrafts"": [
+            ""223"",
+            ""32N"",
+            ""32N"",
+            ""223""
+        ],
+        ""payment_methods"": [
+            ""card""
+        ]
+    },
+    {
+        ""airline"": ""LX"",
+        ""price"": 613,
+        ""duration"": 1075,
+        ""stops"": 1,
+        ""departure_time"": ""09:45"",
+        ""arrival_time"": ""18:50"",
+        ""booking_link"": 12300003,
+        ""handbags"": [
+            ""1PC7x36x23x55"",
+            ""1PC7x36x23x55""
+        ],
+        ""baggage"": [
+            """",
+            """"
+        ],
+        ""stopovers"": [
+            {
+                ""stop_airport"": ""ZRH"",
+                ""duration_minutes"": 6300
+            },
+            {
+                ""stop_airport"": ""ZRH"",
+                ""duration_minutes"": 27300
+            }
+        ],
+        ""flight_numbers"": [
+            ""0633"",
+            ""2084"",
+            ""2083"",
+            ""0644""
+        ],
+        ""aircrafts"": [
+            ""32N"",
+            ""321"",
+            ""32N"",
+            ""32B""
+        ],
+        ""payment_methods"": [
+            ""card""
+        ]
+    },
+    {
+        ""airline"": ""LX"",
+        ""price"": 642,
+        ""duration"": 1120,
+        ""stops"": 1,
+        ""departure_time"": ""14:55"",
+        ""arrival_time"": ""18:50"",
+        ""booking_link"": 12300004,
+        ""handbags"": [
+            ""1PC8x40x23x55"",
+            ""1PC7x36x23x55""
+        ],
+        ""baggage"": [
+            """",
+            """"
+        ],
+        ""stopovers"": [
+            {
+                ""stop_airport"": ""ZRH"",
+                ""duration_minutes"": 18600
+            },
+            {
+                ""stop_airport"": ""ZRH"",
+                ""duration_minutes"": 18300
+            }
+        ],
+        ""flight_numbers"": [
+            ""0639"",
+            ""2082"",
+            ""930"",
+            ""0644""
+        ],
+        ""aircrafts"": [
+            ""223"",
+            ""32N"",
+            ""320"",
+            ""32B""
+        ],
+        ""payment_methods"": [
+            ""card""
+        ]
+    },
+    {
+        ""airline"": ""LX"",
+        ""price"": 696,
+        ""duration"": 970,
+        ""stops"": 1,
+        ""departure_time"": ""06:45"",
+        ""arrival_time"": ""14:05"",
+        ""booking_link"": 12300005,
+        ""handbags"": [
+            ""1PC8x40x23x55"",
+            ""1PC7x36x23x55""
+        ],
+        ""baggage"": [
+            """",
+            """"
+        ],
+        ""stopovers"": [
+            {
+                ""stop_airport"": ""ZRH"",
+                ""duration_minutes"": 17400
+            },
+            {
+                ""stop_airport"": ""ZRH"",
+                ""duration_minutes"": 10200
+            }
+        ],
+        ""flight_numbers"": [
+            ""0647"",
+            ""2084"",
+            ""2083"",
+            ""0638""
+        ],
+        ""aircrafts"": [
+            ""223"",
+            ""321"",
+            ""32N"",
+            ""223""
+        ],
+        ""payment_methods"": [
+            ""card""
+        ]
+    },
+    {
+        ""airline"": ""LX"",
+        ""price"": 718,
+        ""duration"": 790,
+        ""stops"": 1,
+        ""departure_time"": ""09:45"",
+        ""arrival_time"": ""14:05"",
+        ""booking_link"": 12300006,
+        ""handbags"": [
+            ""1PC7x36x23x55"",
+            ""1PC7x36x23x55""
+        ],
+        ""baggage"": [
+            """",
+            """"
+        ],
+        ""stopovers"": [
+            {
+                ""stop_airport"": ""ZRH"",
+                ""duration_minutes"": 6300
+            },
+            {
+                ""stop_airport"": ""ZRH"",
+                ""duration_minutes"": 10200
+            }
+        ],
+        ""flight_numbers"": [
+            ""0633"",
+            ""2084"",
+            ""2083"",
+            ""0638""
+        ],
+        ""aircrafts"": [
+            ""32N"",
+            ""321"",
+            ""32N"",
+            ""223""
+        ],
+        ""payment_methods"": [
+            ""card""
+        ]
+    },
+    {
+        ""airline"": ""LX"",
+        ""price"": 724,
+        ""duration"": 1095,
+        ""stops"": 1,
+        ""departure_time"": ""06:45"",
+        ""arrival_time"": ""18:50"",
+        ""booking_link"": 12300007,
+        ""handbags"": [
+            ""1PC8x40x23x55"",
+            ""1PC7x36x23x55""
+        ],
+        ""baggage"": [
+            """",
+            """"
+        ],
+        ""stopovers"": [
+            {
+                ""stop_airport"": ""ZRH"",
+                ""duration_minutes"": 17400
+            },
+            {
+                ""stop_airport"": ""ZRH"",
+                ""duration_minutes"": 18300
+            }
+        ],
+        ""flight_numbers"": [
+            ""0647"",
+            ""2084"",
+            ""930"",
+            ""0644""
+        ],
+        ""aircrafts"": [
+            ""223"",
+            ""321"",
+            ""320"",
+            ""32B""
+        ],
+        ""payment_methods"": [
+            ""card""
+        ]
+    },
+    {
+        ""airline"": ""LX"",
+        ""price"": 747,
+        ""duration"": 915,
+        ""stops"": 1,
+        ""departure_time"": ""09:45"",
+        ""arrival_time"": ""18:50"",
+        ""booking_link"": 12300008,
+        ""handbags"": [
+            ""1PC7x36x23x55"",
+            ""1PC7x36x23x55""
+        ],
+        ""baggage"": [
+            """",
+            """"
+        ],
+        ""stopovers"": [
+            {
+                ""stop_airport"": ""ZRH"",
+                ""duration_minutes"": 6300
+            },
+            {
+                ""stop_airport"": ""ZRH"",
+                ""duration_minutes"": 18300
+            }
+        ],
+        ""flight_numbers"": [
+            ""0633"",
+            ""2084"",
+            ""930"",
+            ""0644""
+        ],
+        ""aircrafts"": [
+            ""32N"",
+            ""321"",
+            ""320"",
+            ""32B""
+        ],
+        ""payment_methods"": [
+            ""card""
+        ]
+    },
+    {
+        ""airline"": ""LX"",
+        ""price"": 792,
+        ""duration"": 1090,
+        ""stops"": 1,
+        ""departure_time"": ""14:55"",
+        ""arrival_time"": ""18:50"",
+        ""booking_link"": 12300009,
+        ""handbags"": [
+            ""1PC8x40x23x55"",
+            ""1PC8x40x20x55""
+        ],
+        ""baggage"": [
+            ""1PC23"",
+            ""1PC""
+        ],
+        ""stopovers"": [
+            {
+                ""stop_airport"": ""ZRH"",
+                ""duration_minutes"": 6900
+            },
+            {
+                ""stop_airport"": ""ZRH"",
+                ""duration_minutes"": 27300
+            }
+        ],
+        ""flight_numbers"": [
+            ""0639"",
+            ""933"",
+            ""2083"",
+            ""0644""
+        ],
+        ""aircrafts"": [
+            ""223"",
+            ""321"",
+            ""32N"",
+            ""32B""
+        ],
+        ""payment_methods"": [
+            ""card""
+        ]
+    },
+    {
+        ""airline"": ""LX"",
+        ""price"": 792,
+        ""duration"": 1285,
+        ""stops"": 1,
+        ""departure_time"": ""06:45"",
+        ""arrival_time"": ""18:50"",
+        ""booking_link"": 12300010,
+        ""handbags"": [
+            ""1PC8x40x23x55"",
+            ""1PC8x40x20x55""
+        ],
+        ""baggage"": [
+            ""1PC23"",
+            ""1PC""
+        ],
+        ""stopovers"": [
+            {
+                ""stop_airport"": ""ZRH"",
+                ""duration_minutes"": 18900
+            },
+            {
+                ""stop_airport"": ""ZRH"",
+                ""duration_minutes"": 27300
+            }
+        ],
+        ""flight_numbers"": [
+            ""0647"",
+            ""931"",
+            ""2083"",
+            ""0644""
+        ],
+        ""aircrafts"": [
+            ""223"",
+            ""320"",
+            ""32N"",
+            ""32B""
+        ],
+        ""payment_methods"": [
+            ""card""
+        ]
+    },
+    {
+        ""airline"": ""LX"",
+        ""price"": 803,
+        ""duration"": 955,
+        ""stops"": 1,
+        ""departure_time"": ""14:55"",
+        ""arrival_time"": ""22:00"",
+        ""booking_link"": 12300011,
+        ""handbags"": [
+            ""1PC8x40x23x55"",
+            ""1PC7x36x23x55""
+        ],
+        ""baggage"": [
+            """",
+            """"
+        ],
+        ""stopovers"": [
+            {
+                ""stop_airport"": ""ZRH"",
+                ""duration_minutes"": 18600
+            },
+            {
+                ""stop_airport"": ""GVA"",
+                ""duration_minutes"": 9900
+            }
+        ],
+        ""flight_numbers"": [
+            ""0639"",
+            ""2082"",
+            ""2093"",
+            ""1043""
+        ],
+        ""aircrafts"": [
+            ""223"",
+            ""32N"",
+            ""223"",
+            ""223""
+        ],
+        ""payment_methods"": [
+            ""card""
+        ]
+    },
+    {
+        ""airline"": ""LX"",
+        ""price"": 885,
+        ""duration"": 930,
+        ""stops"": 1,
+        ""departure_time"": ""06:45"",
+        ""arrival_time"": ""22:00"",
+        ""booking_link"": 12300012,
+        ""handbags"": [
+            ""1PC8x40x23x55"",
+            ""1PC7x36x23x55""
+        ],
+        ""baggage"": [
+            """",
+            """"
+        ],
+        ""stopovers"": [
+            {
+                ""stop_airport"": ""ZRH"",
+                ""duration_minutes"": 17400
+            },
+            {
+                ""stop_airport"": ""GVA"",
+                ""duration_minutes"": 9900
+            }
+        ],
+        ""flight_numbers"": [
+            ""0647"",
+            ""2084"",
+            ""2093"",
+            ""1043""
+        ],
+        ""aircrafts"": [
+            ""223"",
+            ""321"",
+            ""223"",
+            ""223""
+        ],
+        ""payment_methods"": [
+            ""card""
+        ]
+    },
+    {
+        ""airline"": ""LX"",
+        ""price"": 897,
+        ""duration"": 1000,
+        ""stops"": 1,
+        ""departure_time"": ""06:45"",
+        ""arrival_time"": ""14:05"",
+        ""booking_link"": 12300014,
+        ""handbags"": [
+            ""1PC8x40x23x55"",
+            ""1PC8x40x20x55""
+        ],
+        ""baggage"": [
+            ""1PC23"",
+            ""1PC""
+        ],
+        ""stopovers"": [
+            {
+                ""stop_airport"": ""ZRH"",
+                ""duration_minutes"": 18900
+            },
+            {
+                ""stop_airport"": ""ZRH"",
+                ""duration_minutes"": 10200
+            }
+        ],
+        ""flight_numbers"": [
+            ""0647"",
+            ""931"",
+            ""2083"",
+            ""0638""
+        ],
+        ""aircrafts"": [
+            ""223"",
+            ""320"",
+            ""32N"",
+            ""223""
+        ],
+        ""payment_methods"": [
+            ""card""
+        ]
+    },
+    {
+        ""airline"": ""LX"",
+        ""price"": 897,
+        ""duration"": 805,
+        ""stops"": 1,
+        ""departure_time"": ""14:55"",
+        ""arrival_time"": ""14:05"",
+        ""booking_link"": 12300013,
+        ""handbags"": [
+            ""1PC8x40x23x55"",
+            ""1PC8x40x20x55""
+        ],
+        ""baggage"": [
+            ""1PC23"",
+            ""1PC""
+        ],
+        ""stopovers"": [
+            {
+                ""stop_airport"": ""ZRH"",
+                ""duration_minutes"": 6900
+            },
+            {
+                ""stop_airport"": ""ZRH"",
+                ""duration_minutes"": 10200
+            }
+        ],
+        ""flight_numbers"": [
+            ""0639"",
+            ""933"",
+            ""2083"",
+            ""0638""
+        ],
+        ""aircrafts"": [
+            ""223"",
+            ""321"",
+            ""32N"",
+            ""223""
+        ],
+        ""payment_methods"": [
+            ""card""
+        ]
+    },
+    {
+        ""airline"": ""LX"",
+        ""price"": 908,
+        ""duration"": 750,
+        ""stops"": 1,
+        ""departure_time"": ""09:45"",
+        ""arrival_time"": ""22:00"",
+        ""booking_link"": 12300015,
+        ""handbags"": [
+            ""1PC7x36x23x55"",
+            ""1PC7x36x23x55""
+        ],
+        ""baggage"": [
+            """",
+            """"
+        ],
+        ""stopovers"": [
+            {
+                ""stop_airport"": ""ZRH"",
+                ""duration_minutes"": 6300
+            },
+            {
+                ""stop_airport"": ""GVA"",
+                ""duration_minutes"": 9900
+            }
+        ],
+        ""flight_numbers"": [
+            ""0633"",
+            ""2084"",
+            ""2093"",
+            ""1043""
+        ],
+        ""aircrafts"": [
+            ""32N"",
+            ""321"",
+            ""223"",
+            ""223""
+        ],
+        ""payment_methods"": [
+            ""card""
+        ]
+    },
+    {
+        ""airline"": ""LX"",
+        ""price"": 925,
+        ""duration"": 930,
+        ""stops"": 1,
+        ""departure_time"": ""14:55"",
+        ""arrival_time"": ""18:50"",
+        ""booking_link"": 12300016,
+        ""handbags"": [
+            ""1PC8x40x23x55"",
+            ""1PC8x40x20x55""
+        ],
+        ""baggage"": [
+            ""1PC23"",
+            ""1PC""
+        ],
+        ""stopovers"": [
+            {
+                ""stop_airport"": ""ZRH"",
+                ""duration_minutes"": 6900
+            },
+            {
+                ""stop_airport"": ""ZRH"",
+                ""duration_minutes"": 18300
+            }
+        ],
+        ""flight_numbers"": [
+            ""0639"",
+            ""933"",
+            ""930"",
+            ""0644""
+        ],
+        ""aircrafts"": [
+            ""223"",
+            ""321"",
+            ""320"",
+            ""32B""
+        ],
+        ""payment_methods"": [
+            ""card""
+        ]
+    },
+    {
+        ""airline"": ""LX"",
+        ""price"": 925,
+        ""duration"": 1125,
+        ""stops"": 1,
+        ""departure_time"": ""06:45"",
+        ""arrival_time"": ""18:50"",
+        ""booking_link"": 12300017,
+        ""handbags"": [
+            ""1PC8x40x23x55"",
+            ""1PC8x40x20x55""
+        ],
+        ""baggage"": [
+            ""1PC23"",
+            ""1PC""
+        ],
+        ""stopovers"": [
+            {
+                ""stop_airport"": ""ZRH"",
+                ""duration_minutes"": 18900
+            },
+            {
+                ""stop_airport"": ""ZRH"",
+                ""duration_minutes"": 18300
+            }
+        ],
+        ""flight_numbers"": [
+            ""0647"",
+            ""931"",
+            ""930"",
+            ""0644""
+        ],
+        ""aircrafts"": [
+            ""223"",
+            ""320"",
+            ""320"",
+            ""32B""
+        ],
+        ""payment_methods"": [
+            ""card""
+        ]
+    },
+    {
+        ""airline"": ""LX"",
+        ""price"": 1004,
+        ""duration"": 1400,
+        ""stops"": 1,
+        ""departure_time"": ""09:45"",
+        ""arrival_time"": ""18:50"",
+        ""booking_link"": 12300019,
+        ""handbags"": [
+            ""1PC7x36x23x55"",
+            ""1PC8x40x20x55""
+        ],
+        ""baggage"": [
+            ""1PC"",
+            ""1PC""
+        ],
+        ""stopovers"": [
+            {
+                ""stop_airport"": ""ZRH"",
+                ""duration_minutes"": 25200
+            },
+            {
+                ""stop_airport"": ""ZRH"",
+                ""duration_minutes"": 27300
+            }
+        ],
+        ""flight_numbers"": [
+            ""0633"",
+            ""933"",
+            ""2083"",
+            ""0644""
+        ],
+        ""aircrafts"": [
+            ""32N"",
+            ""321"",
+            ""32N"",
+            ""32B""
+        ],
+        ""payment_methods"": [
+            ""card""
+        ]
+    },
+    {
+        ""airline"": ""LX"",
+        ""price"": 1004,
+        ""duration"": 1105,
+        ""stops"": 1,
+        ""departure_time"": ""09:45"",
+        ""arrival_time"": ""18:50"",
+        ""booking_link"": 12300018,
+        ""handbags"": [
+            ""1PC7x36x23x55"",
+            ""1PC8x40x20x55""
+        ],
+        ""baggage"": [
+            ""1PC"",
+            ""1PC""
+        ],
+        ""stopovers"": [
+            {
+                ""stop_airport"": ""ZRH"",
+                ""duration_minutes"": 7800
+            },
+            {
+                ""stop_airport"": ""ZRH"",
+                ""duration_minutes"": 27300
+            }
+        ],
+        ""flight_numbers"": [
+            ""0633"",
+            ""931"",
+            ""2083"",
+            ""0644""
+        ],
+        ""aircrafts"": [
+            ""32N"",
+            ""320"",
+            ""32N"",
+            ""32B""
+        ],
+        ""payment_methods"": [
+            ""card""
+        ]
+    },
+    {
+        ""airline"": ""LX"",
+        ""price"": 1086,
+        ""duration"": 765,
+        ""stops"": 1,
+        ""departure_time"": ""14:55"",
+        ""arrival_time"": ""22:00"",
+        ""booking_link"": 12300020,
+        ""handbags"": [
+            ""1PC8x40x23x55"",
+            ""1PC8x40x20x55""
+        ],
+        ""baggage"": [
+            ""1PC23"",
+            ""1PC""
+        ],
+        ""stopovers"": [
+            {
+                ""stop_airport"": ""ZRH"",
+                ""duration_minutes"": 6900
+            },
+            {
+                ""stop_airport"": ""GVA"",
+                ""duration_minutes"": 9900
+            }
+        ],
+        ""flight_numbers"": [
+            ""0639"",
+            ""933"",
+            ""2093"",
+            ""1043""
+        ],
+        ""aircrafts"": [
+            ""223"",
+            ""321"",
+            ""223"",
+            ""223""
+        ],
+        ""payment_methods"": [
+            ""card""
+        ]
+    },
+    {
+        ""airline"": ""LX"",
+        ""price"": 1086,
+        ""duration"": 960,
+        ""stops"": 1,
+        ""departure_time"": ""06:45"",
+        ""arrival_time"": ""22:00"",
+        ""booking_link"": 12300021,
+        ""handbags"": [
+            ""1PC8x40x23x55"",
+            ""1PC8x40x20x55""
+        ],
+        ""baggage"": [
+            ""1PC23"",
+            ""1PC""
+        ],
+        ""stopovers"": [
+            {
+                ""stop_airport"": ""ZRH"",
+                ""duration_minutes"": 18900
+            },
+            {
+                ""stop_airport"": ""GVA"",
+                ""duration_minutes"": 9900
+            }
+        ],
+        ""flight_numbers"": [
+            ""0647"",
+            ""931"",
+            ""2093"",
+            ""1043""
+        ],
+        ""aircrafts"": [
+            ""223"",
+            ""320"",
+            ""223"",
+            ""223""
+        ],
+        ""payment_methods"": [
+            ""card""
+        ]
+    },
+    {
+        ""airline"": ""LX"",
+        ""price"": 1109,
+        ""duration"": 1115,
+        ""stops"": 1,
+        ""departure_time"": ""09:45"",
+        ""arrival_time"": ""14:05"",
+        ""booking_link"": 12300023,
+        ""handbags"": [
+            ""1PC7x36x23x55"",
+            ""1PC8x40x20x55""
+        ],
+        ""baggage"": [
+            ""1PC"",
+            ""1PC""
+        ],
+        ""stopovers"": [
+            {
+                ""stop_airport"": ""ZRH"",
+                ""duration_minutes"": 25200
+            },
+            {
+                ""stop_airport"": ""ZRH"",
+                ""duration_minutes"": 10200
+            }
+        ],
+        ""flight_numbers"": [
+            ""0633"",
+            ""933"",
+            ""2083"",
+            ""0638""
+        ],
+        ""aircrafts"": [
+            ""32N"",
+            ""321"",
+            ""32N"",
+            ""223""
+        ],
+        ""payment_methods"": [
+            ""card""
+        ]
+    },
+    {
+        ""airline"": ""LX"",
+        ""price"": 1109,
+        ""duration"": 820,
+        ""stops"": 1,
+        ""departure_time"": ""09:45"",
+        ""arrival_time"": ""14:05"",
+        ""booking_link"": 12300022,
+        ""handbags"": [
+            ""1PC7x36x23x55"",
+            ""1PC8x40x20x55""
+        ],
+        ""baggage"": [
+            ""1PC"",
+            ""1PC""
+        ],
+        ""stopovers"": [
+            {
+                ""stop_airport"": ""ZRH"",
+                ""duration_minutes"": 7800
+            },
+            {
+                ""stop_airport"": ""ZRH"",
+                ""duration_minutes"": 10200
+            }
+        ],
+        ""flight_numbers"": [
+            ""0633"",
+            ""931"",
+            ""2083"",
+            ""0638""
+        ],
+        ""aircrafts"": [
+            ""32N"",
+            ""320"",
+            ""32N"",
+            ""223""
+        ],
+        ""payment_methods"": [
+            ""card""
+        ]
+    },
+    {
+        ""airline"": ""LX"",
+        ""price"": 1137,
+        ""duration"": 945,
+        ""stops"": 1,
+        ""departure_time"": ""09:45"",
+        ""arrival_time"": ""18:50"",
+        ""booking_link"": 12300024,
+        ""handbags"": [
+            ""1PC7x36x23x55"",
+            ""1PC8x40x20x55""
+        ],
+        ""baggage"": [
+            ""1PC"",
+            ""1PC""
+        ],
+        ""stopovers"": [
+            {
+                ""stop_airport"": ""ZRH"",
+                ""duration_minutes"": 7800
+            },
+            {
+                ""stop_airport"": ""ZRH"",
+                ""duration_minutes"": 18300
+            }
+        ],
+        ""flight_numbers"": [
+            ""0633"",
+            ""931"",
+            ""930"",
+            ""0644""
+        ],
+        ""aircrafts"": [
+            ""32N"",
+            ""320"",
+            ""320"",
+            ""32B""
+        ],
+        ""payment_methods"": [
+            ""card""
+        ]
+    },
+    {
+        ""airline"": ""LX"",
+        ""price"": 1137,
+        ""duration"": 1240,
+        ""stops"": 1,
+        ""departure_time"": ""09:45"",
+        ""arrival_time"": ""18:50"",
+        ""booking_link"": 12300025,
+        ""handbags"": [
+            ""1PC7x36x23x55"",
+            ""1PC8x40x20x55""
+        ],
+        ""baggage"": [
+            ""1PC"",
+            ""1PC""
+        ],
+        ""stopovers"": [
+            {
+                ""stop_airport"": ""ZRH"",
+                ""duration_minutes"": 25200
+            },
+            {
+                ""stop_airport"": ""ZRH"",
+                ""duration_minutes"": 18300
+            }
+        ],
+        ""flight_numbers"": [
+            ""0633"",
+            ""933"",
+            ""930"",
+            ""0644""
+        ],
+        ""aircrafts"": [
+            ""32N"",
+            ""321"",
+            ""320"",
+            ""32B""
+        ],
+        ""payment_methods"": [
+            ""card""
+        ]
+    },
+    {
+        ""airline"": ""LX"",
+        ""price"": 1299,
+        ""duration"": 1075,
+        ""stops"": 1,
+        ""departure_time"": ""09:45"",
+        ""arrival_time"": ""22:00"",
+        ""booking_link"": 12300027,
+        ""handbags"": [
+            ""1PC7x36x23x55"",
+            ""1PC8x40x20x55""
+        ],
+        ""baggage"": [
+            ""1PC"",
+            ""1PC""
+        ],
+        ""stopovers"": [
+            {
+                ""stop_airport"": ""ZRH"",
+                ""duration_minutes"": 25200
+            },
+            {
+                ""stop_airport"": ""GVA"",
+                ""duration_minutes"": 9900
+            }
+        ],
+        ""flight_numbers"": [
+            ""0633"",
+            ""933"",
+            ""2093"",
+            ""1043""
+        ],
+        ""aircrafts"": [
+            ""32N"",
+            ""321"",
+            ""223"",
+            ""223""
+        ],
+        ""payment_methods"": [
+            ""card""
+        ]
+    },
+    {
+   "
+Itinéraire IA;POST;/generate-itinerary;Non;-;Générer un itinéraire IA avec Gemini;"{""city"": ""Lisbonne"", ""start_date"": ""2025-08-10"", ""end_date"": ""2025-08-15"", ""profile"": ""solo"", ""preferences"": [""culture"", ""bouffe""]}";"{
+    ""city"": ""Lisbonne"",
+    ""start_date"": ""2025-08-10"",
+    ""end_date"": ""2025-08-15"",
+    ""days"": [
+        {
+            ""date"": ""2025-08-10"",
+            ""activities"": [
+                {
+                    ""type"": ""walk"",
+                    ""name"": ""Alfama"",
+                    ""start_time"": ""09:00"",
+                    ""end_time"": ""12:00""
+                },
+                {
+                    ""type"": ""restaurant"",
+                    ""name"": ""Chapitô à Mesa"",
+                    ""start_time"": ""12:30"",
+                    ""end_time"": ""14:00""
+                },
+                {
+                    ""type"": ""visit"",
+                    ""name"": ""Castelo de São Jorge"",
+                    ""start_time"": ""14:30"",
+                    ""end_time"": ""17:00""
+                },
+                {
+                    ""type"": ""experience"",
+                    ""name"": ""Tram 28 ride"",
+                    ""start_time"": ""17:30"",
+                    ""end_time"": ""18:30""
+                },
+                {
+                    ""type"": ""restaurant"",
+                    ""name"": ""Time Out Market Lisboa"",
+                    ""start_time"": ""19:00"",
+                    ""end_time"": ""21:00""
+                }
+            ]
+        },
+        {
+            ""date"": ""2025-08-11"",
+            ""activities"": [
+                {
+                    ""type"": ""visit"",
+                    ""name"": ""Mosteiro dos Jerónimos"",
+                    ""start_time"": ""09:30"",
+                    ""end_time"": ""11:30""
+                },
+                {
+                    ""type"": ""restaurant"",
+                    ""name"": ""Pastéis de Belém"",
+                    ""start_time"": ""12:00"",
+                    ""end_time"": ""13:00""
+                },
+                {
+                    ""type"": ""visit"",
+                    ""name"": ""Torre de Belém"",
+                    ""start_time"": ""13:30"",
+                    ""end_time"": ""15:00""
+                },
+                {
+                    ""type"": ""walk"",
+                    ""name"": ""Belém waterfront"",
+                    ""start_time"": ""15:30"",
+                    ""end_time"": ""17:00""
+                },
+                {
+                    ""type"": ""restaurant"",
+                    ""name"": ""Ponto Final"",
+                    ""start_time"": ""19:30"",
+                    ""end_time"": ""21:30""
+                }
+            ]
+        },
+        {
+            ""date"": ""2025-08-12"",
+            ""activities"": [
+                {
+                    ""type"": ""brunch"",
+                    ""name"": ""Dear Breakfast"",
+                    ""start_time"": ""10:00"",
+                    ""end_time"": ""11:30""
+                },
+                {
+                    ""type"": ""visit"",
+                    ""name"": ""Museu Nacional do Azulejo"",
+                    ""start_time"": ""12:00"",
+                    ""end_time"": ""14:00""
+                },
+                {
+                    ""type"": ""shop"",
+                    ""name"": ""Feira da Ladra"",
+                    ""start_time"": ""14:30"",
+                    ""end_time"": ""17:00""
+                },
+                {
+                    ""type"": ""experience"",
+                    ""name"": ""Fado show at Clube de Fado"",
+                    ""start_time"": ""20:00"",
+                    ""end_time"": ""22:00""
+                }
+            ]
+        },
+        {
+            ""date"": ""2025-08-13"",
+            ""activities"": [
+                {
+                    ""type"": ""visit"",
+                    ""name"": ""Palácio Nacional de Sintra"",
+                    ""start_time"": ""10:00"",
+                    ""end_time"": ""12:30""
+                },
+                {
+                    ""type"": ""restaurant"",
+                    ""name"": ""Inzitu"",
+                    ""start_time"": ""13:00"",
+                    ""end_time"": ""14:30""
+                },
+                {
+                    ""type"": ""visit"",
+                    ""name"": ""Quinta da Regaleira"",
+                    ""start_time"": ""15:00"",
+                    ""end_time"": ""17:30""
+                }
+            ]
+        },
+        {
+            ""date"": ""2025-08-14"",
+            ""activities"": [
+                {
+                    ""type"": ""walk"",
+                    ""name"": ""LX Factory"",
+                    ""start_time"": ""10:00"",
+                    ""end_time"": ""13:00""
+                },
+                {
+                    ""type"": ""restaurant"",
+                    ""name"": ""Cantina LX"",
+                    ""start_time"": ""13:00"",
+                    ""end_time"": ""14:30""
+                },
+                {
+                    ""type"": ""visit"",
+                    ""name"": ""MAAT"",
+                    ""start_time"": ""15:00"",
+                    ""end_time"": ""17:00""
+                },
+                {
+                    ""type"": ""experience"",
+                    ""name"": ""Park Rooftop Bar"",
+                    ""start_time"": ""18:00"",
+                    ""end_time"": ""20:00""
+                }
+            ]
+        }
+    ]
+}"
+Voir favoris;GET;/favorites/;Oui;-;Récupérer la liste des favoris de l'utilisateur;Rien;"[
+    {
+        ""id"": 42,
+        ""user_id"": ""35e98231-62af-4c8a-b5fb-5d16d5b96ada"",
+        ""destination"": ""Lisbon"",
+        ""start_date"": ""2025-05-12"",
+        ""end_date"": ""2025-05-18"",
+        ""itinerary"": [
+            {
+                ""date"": ""2025-05-12"",
+                ""meals"": [
+                    {
+                        ""type"": ""Déjeuner"",
+                        ""notes"": ""Restaurant populaire pour les fruits de mer frais."",
+                        ""place"": ""Cervejaria Ramiro"",
+                        ""price"": 20
+                    },
+                    {
+                        ""type"": ""Dîner"",
+                        ""notes"": ""Restaurant traditionnel avec ambiance locale et cuisine authentique."",
+                        ""place"": ""Tasca do Chico"",
+                        ""price"": 25
+                    }
+                ],
+                ""weather"": ""Ensoleillé"",
+                ""activities"": [
+                    {
+                        ""name"": ""Visite du Château Saint-Georges"",
+                        ""time"": ""Matin"",
+                        ""price"": 10,
+                        ""location"": ""Alfama"",
+                        ""description"": ""Exploration du château historique offrant une vue panoramique sur Lisbonne.""
+                    },
+                    {
+                        ""name"": ""Découverte du quartier de l'Alfama"",
+                        ""time"": ""Après-midi"",
+                        ""price"": 0,
+                        ""location"": ""Alfama"",
+                        ""description"": ""Promenade à pied à travers les ruelles pittoresques et les maisons colorées de l'Alfama.""
+                    },
+                    {
+                        ""name"": ""Spectacle de Fado"",
+                        ""time"": ""Soir"",
+                        ""price"": 30,
+                        ""location"": ""Alfama"",
+                        ""description"": ""Expérience immersive dans la musique traditionnelle portugaise.""
+                    },
+                    {
+                        ""name"": ""Dégustation de vins locaux"",
+                        ""time"": ""Soir"",
+                        ""price"": 25,
+                        ""location"": ""Chiado"",
+                        ""description"": ""Dégustation de vins portugais accompagnés de fromages et charcuteries.""
+                    }
+                ]
+            },
+            {
+                ""date"": ""2025-05-13"",
+                ""meals"": [
+                    {
+                        ""type"": ""Déjeuner"",
+                        ""notes"": ""Le lieu original pour déguster les célèbres pâtisseries."",
+                        ""place"": ""Pastéis de Belém"",
+                        ""price"": 10
+                    },
+                    {
+                        ""type"": ""Dîner"",
+                        ""notes"": ""Marché alimentaire proposant une variété de plats portugais."",
+                        ""place"": ""Time Out Market Lisboa"",
+                        ""price"": 25
+                    }
+                ],
+                ""weather"": ""Ensoleillé"",
+                ""activities"": [
+                    {
+                        ""name"": ""Visite de la Tour de Belém"",
+                        ""time"": ""Matin"",
+                        ""price"": 6,
+                        ""location"": ""Belém"",
+                        ""description"": ""Découverte de cette emblématique tour historique.""
+                    },
+                    {
+                        ""name"": ""Dégustation de Pastéis de Belém"",
+                        ""time"": ""Matin"",
+                        ""price"": 5,
+                        ""location"": ""Belém"",
+                        ""description"": ""Goûter aux célèbres pâtisseries portugaises.""
+                    },
+                    {
+                        ""name"": ""Visite du Monastère des Jerónimos"",
+                        ""time"": ""Après-midi"",
+                        ""price"": 10,
+                        ""location"": ""Belém"",
+                        ""description"": ""Découverte de l'architecture magnifique de ce monastère classé au patrimoine mondial de l'UNESCO.""
+                    },
+                    {
+                        ""name"": ""Croisière sur le Tage"",
+                        ""time"": ""Après-midi"",
+                        ""price"": 20,
+                        ""location"": ""Cais do Sodré"",
+                        ""description"": ""Vue imprenable sur Lisbonne depuis le fleuve.""
+                    }
+                ]
+            },
+            {
+                ""date"": ""2025-05-14"",
+                ""meals"": [
+                    {
+                        ""type"": ""Déjeuner"",
+                        ""notes"": ""Café traditionnel servant des repas légers et des pâtisseries."",
+                        ""place"": ""Café Nicola"",
+                        ""price"": 15
+                    },
+                    {
+                        ""type"": ""Dîner"",
+                        ""notes"": ""Restaurant installé dans une ancienne pharmacie, ambiance originale."",
+                        ""place"": ""Restaurante Pharmacia"",
+                        ""price"": 30
+                    }
+                ],
+                ""weather"": ""Nuageux"",
+                ""activities"": [
+                    {
+                        ""name"": ""Visite du Musée Calouste Gulbenkian"",
+                        ""time"": ""Matin"",
+                        ""price"": 15,
+                        ""location"": ""Avenidas Novas"",
+                        ""description"": ""Découverte de l'impressionnante collection d'art du musée.""
+                    },
+                    {
+                        ""name"": ""Promenade dans le Parc Eduardo VII"",
+                        ""time"": ""Après-midi"",
+                        ""price"": 0,
+                        ""location"": ""Avenidas Novas"",
+                        ""description"": ""Détente dans un beau parc avec vue sur la ville.""
+                    },
+                    {
+                        ""name"": ""Cours de cuisine portugaise"",
+                        ""time"": ""Après-midi"",
+                        ""price"": 60,
+                        ""location"": ""Chiado"",
+                        ""description"": ""Apprendre à préparer des plats portugais typiques.""
+                    },
+                    {
+                        ""name"": ""Concert de musique classique"",
+                        ""time"": ""Soir"",
+                        ""price"": 30,
+                        ""location"": ""Chiado"",
+                        ""description"": ""Concert dans un lieu historique ou une salle de concert.""
+                    }
+                ]
+            },
+            {
+                ""date"": ""2025-05-15"",
+                ""meals"": [
+                    {
+                        ""type"": ""Déjeuner"",
+                        ""notes"": ""Café historique fréquenté par des écrivains et des artistes."",
+                        ""place"": ""A Brasileira"",
+                        ""price"": 15
+                    },
+                    {
+                        ""type"": ""Dîner"",
+                        ""notes"": ""Restaurant dans une ancienne église, ambiance unique."",
+                        ""place"": ""Cervejaria Trindade"",
+                        ""price"": 35
+                    }
+                ],
+                ""weather"": ""Pluie légère"",
+                ""activities"": [
+                    {
+                        ""name"": ""Visite du Musée national d'art ancien"",
+                        ""time"": ""Matin"",
+                        ""price"": 10,
+                        ""location"": ""Chiado"",
+                        ""description"": ""Découverte de l'art portugais du Moyen Âge à la fin du XVIIIe siècle.""
+                    },
+                    {
+                        ""name"": ""Shopping au Chiado"",
+                        ""time"": ""Après-midi"",
+                        ""price"": 0,
+                        ""location"": ""Chiado"",
+                        ""description"": ""Découverte des boutiques et des magasins du quartier.""
+                    },
+                    {
+                        ""name"": ""Visite du LX Factory"",
+                        ""time"": ""Après-midi"",
+                        ""price"": 0,
+                        ""location"": ""Alcântara"",
+                        ""description"": ""Découverte d'un ancien complexe industriel transformé en espace créatif.""
+                    },
+                    {
+                        ""name"": ""Spectacle de marionnettes"",
+                        ""time"": ""Soir"",
+                        ""price"": 20,
+                        ""location"": ""Bairro Alto"",
+                        ""description"": ""Spectacle traditionnel portugais.""
+                    }
+                ]
+            },
+            {
+                ""date"": ""2025-05-16"",
+                ""meals"": [
+                    {
+                        ""type"": ""Déjeuner"",
+                        ""notes"": ""Restaurant de fruits de mer près de l'Oceanário."",
+                        ""place"": ""Restaurante Marisco na Praça"",
+                        ""price"": 25
+                    },
+                    {
+                        ""type"": ""Dîner"",
+                        ""notes"": ""Menu inclus dans le prix de la croisière."",
+                        ""place"": ""(Inclus dans la croisière)"",
+                        ""price"": 50
+                    }
+                ],
+                ""weather"": ""Ensoleillé"",
+                ""activities"": [
+                    {
+                        ""name"": ""Visite du Oceanário de Lisboa"",
+                        ""time"": ""Matin"",
+                        ""price"": 20,
+                        ""location"": ""Parque das Nações"",
+                        ""description"": ""Découverte de la vie marine.""
+                    },
+                    {
+                        ""name"": ""Promenade le long du Tage à Parque das Nações"",
+                        ""time"": ""Après-midi"",
+                        ""price"": 0,
+                        ""location"": ""Parque das Nações"",
+                        ""description"": ""Découverte de l'architecture moderne.""
+                    },
+                    {
+                        ""name"": ""Visite du Pavillon de Portugal (Expo 98)"",
+                        ""time"": ""Après-midi"",
+                        ""price"": 5,
+                        ""location"": ""Parque das Nações"",
+                        ""description"": ""Découverte de l'architecture moderne.""
+                    },
+                    {
+                        ""name"": ""Dîner-croisière sur le Tage"",
+                        ""time"": ""Soir"",
+                        ""price"": 50,
+                        ""location"": ""Cais do Sodré"",
+                        ""description"": ""Dîner et vue panoramique sur Lisbonne.""
+                    }
+                ]
+            },
+            {
+                ""date"": ""2025-05-17"",
+                ""meals"": [
+                    {
+                        ""type"": ""Déjeuner"",
+                        ""notes"": ""Bières artisanales et plats simples."",
+                        ""place"": ""Cervejaria Maldita"",
+                        ""price"": 18
+                    },
+                    {
+                        ""type"": ""Dîner"",
+                        ""notes"": ""Restaurant haut de gamme de José Avillez (prix plus élevé)."",
+                        ""place"": ""Cantinho do Avillez"",
+                        ""price"": 40
+                    }
+                ],
+                ""weather"": ""Ensoleillé"",
+                ""activities"": [
+                    {
+                        ""name"": ""Visite de la Galerie nationale d'art moderne"",
+                        ""time"": ""Matin"",
+                        ""price"": 10,
+                        ""location"": ""Belém"",
+                        ""description"": ""Découverte de l'art moderne et contemporain portugais.""
+                    },
+                    {
+                        ""name"": ""Visite du Jardim Botânico de Lisboa"",
+                        ""time"": ""Après-midi"",
+                        ""price"": 5,
+                        ""location"": ""Ajuda"",
+                        ""description"": ""Découverte d'une large collection de plantes.""
+                    },
+                    {
+                        ""name"": ""Shopping à la LX Factory"",
+                        ""time"": ""Après-midi"",
+                        ""price"": 0,
+                        ""location"": ""Alcântara"",
+                        ""description"": ""Magasins indépendants, design et artisanat.""
+                    },
+                    {
+                        ""name"": ""Concert de Jazz"",
+                        ""time"": ""Soir"",
+                        ""price"": 20,
+                        ""location"": ""Bairro Alto"",
+                        ""description"": ""Concert dans un bar ou club.""
+                    }
+                ]
+            },
+            {
+                ""date"": ""2025-05-18"",
+                ""meals"": [
+                    {
+                        ""type"": ""Déjeuner"",
+                        ""notes"": ""Pâtisseries et café."",
+                        ""place"": ""Pastelaria Versailles"",
+                        ""price"": 12
+                    },
+                    {
+                        ""type"": ""Dîner"",
+                        ""notes"": ""Repas léger avant le départ."",
+                        ""place"": ""Restaurant de l'aéroport"",
+                        ""price"": 20
+                    }
+                ],
+                ""weather"": ""Nuageux"",
+                ""activities"": [
+                    {
+                        ""name"": ""Visite de la place du Commerce"",
+                        ""time"": ""Matin"",
+                        ""price"": 0,
+                        ""location"": ""Baixa"",
+                        ""description"": ""Découverte de la place emblématique et de ses bâtiments.""
+                    },
+                    {
+                        ""name"": ""Visite de l'Elevador de Santa Justa"",
+                        ""time"": ""Matin"",
+                        ""price"": 5,
+                        ""location"": ""Baixa"",
+                        ""description"": ""Ascension dans cet ascenseur historique.""
+                    },
+                    {
+                        ""name"": ""Promenade dans le quartier du Bairro Alto"",
+                        ""time"": ""Après-midi"",
+                        ""price"": 0,
+                        ""location"": ""Bairro Alto"",
+                        ""description"": ""Découverte des ruelles et des bars du quartier.""
+                    },
+                    {
+                        ""name"": ""Derniers achats de souvenirs"",
+                        ""time"": ""Après-midi"",
+                        ""price"": 0,
+                        ""location"": ""Chiado / Baixa"",
+                        ""description"": ""Recherche de souvenirs avant le départ.""
+                    }
+                ]
+            }
+        ],
+        ""created_at"": ""2025-05-05T11:45:50.293784"",
+        ""flights"": {
+            ""return"": [
+                {
+                    ""logo"": ""https://r-xx.bstatic.com/data/airlines_logo/U2.png"",
+                    ""price"": 142.47,
+                    ""airline"": ""Easyjet"",
+                    ""currency"": ""EUR"",
+                    ""duration"": ""2h35m"",
+                    ""booking_url"": ""https://www.skyscanner.fr/transport/flights/lis/cdg/250518/250512/?adults=1&children=0&cabinclass=economy"",
+                    ""arrival_city"": ""Paris"",
+                    ""arrival_time"": ""12:45"",
+                    ""departure_city"": ""Lisbon"",
+                    ""departure_time"": ""09:10""
+                },
+                {
+                    ""logo"": ""https://r-xx.bstatic.com/data/airlines_logo/U2.png"",
+                    ""price"": 144.63,
+                    ""airline"": ""Easyjet"",
+                    ""currency"": ""EUR"",
+                    ""duration"": ""2h40m"",
+                    ""booking_url"": ""https://www.skyscanner.fr/transport/flights/lis/cdg/250518/250512/?adults=1&children=0&cabinclass=economy"",
+                    ""arrival_city"": ""Paris"",
+                    ""arrival_time"": ""18:30"",
+                    ""departure_city"": ""Lisbon"",
+                    ""departure_time"": ""14:50""
+                },
+                {
+                    ""logo"": ""https://r-xx.bstatic.com/data/airlines_logo/AF.png"",
+                    ""price"": 155.45,
+                    ""airline"": ""Air France"",
+                    ""currency"": ""EUR"",
+                    ""duration"": ""2h30m"",
+                    ""booking_url"": ""https://www.skyscanner.fr/transport/flights/lis/cdg/250518/250512/?adults=1&children=0&cabinclass=economy"",
+                    ""arrival_city"": ""Paris"",
+                    ""arrival_time"": ""09:10"",
+                    ""departure_city"": ""Lisbon"",
+                    ""departure_time"": ""05:40""
+                },
+                {
+                    ""logo"": ""https://r-xx.bstatic.com/data/airlines_logo/AF.png"",
+                    ""price"": 215.83,
+                    ""airline"": ""Air France"",
+                    ""currency"": ""EUR"",
+                    ""duration"": ""2h30m"",
+                    ""booking_url"": ""https://www.skyscanner.fr/transport/flights/lis/cdg/250518/250512/?adults=1&children=0&cabinclass=economy"",
+                    ""arrival_city"": ""Paris"",
+                    ""arrival_time"": ""15:45"",
+                    ""departure_city"": ""Lisbon"",
+                    ""departure_time"": ""12:15""
+                },
+                {
+                    ""logo"": ""https://r-xx.bstatic.com/data/airlines_logo/AF.png"",
+                    ""price"": 262.3,
+                    ""airline"": ""Air France"",
+                    ""currency"": ""EUR"",
+                    ""duration"": ""2h30m"",
+                    ""booking_url"": ""https://www.skyscanner.fr/transport/flights/lis/cdg/250518/250512/?adults=1&children=0&cabinclass=economy"",
+                    ""arrival_city"": ""Paris"",
+                    ""arrival_time"": ""19:25"",
+                    ""departure_city"": ""Lisbon"",
+                    ""departure_time"": ""15:55""
+                }
+            ],
+            ""outbound"": [
+                {
+                    ""logo"": ""https://r-xx.bstatic.com/data/airlines_logo/U2.png"",
+                    ""price"": 196.79,
+                    ""airline"": ""Easyjet"",
+                    ""currency"": ""CAD"",
+                    ""duration"": ""2h40m"",
+                    ""booking_url"": ""https://www.skyscanner.fr/transport/flights/cdg/lis/250512/250518/?adults=1&children=0&cabinclass=economy"",
+                    ""arrival_city"": ""Lisbon"",
+                    ""arrival_time"": ""08:00"",
+                    ""departure_city"": ""Paris"",
+                    ""departure_time"": ""06:20""
+                },
+                {
+                    ""logo"": ""https://r-xx.bstatic.com/data/airlines_logo/AF.png"",
+                    ""price"": 313.26,
+                    ""airline"": ""Air France"",
+                    ""currency"": ""CAD"",
+                    ""duration"": ""2h40m"",
+                    ""booking_url"": ""https://www.skyscanner.fr/transport/flights/cdg/lis/250512/250518/?adults=1&children=0&cabinclass=economy"",
+                    ""arrival_city"": ""Lisbon"",
+                    ""arrival_time"": ""08:50"",
+                    ""departure_city"": ""Paris"",
+                    ""departure_time"": ""07:10""
+                },
+                {
+                    ""logo"": ""https://r-xx.bstatic.com/data/airlines_logo/AF.png"",
+                    ""price"": 418.74,
+                    ""airline"": ""Air France"",
+                    ""currency"": ""CAD"",
+                    ""duration"": ""2h40m"",
+                    ""booking_url"": ""https://www.skyscanner.fr/transport/flights/cdg/lis/250512/250518/?adults=1&children=0&cabinclass=economy"",
+                    ""arrival_city"": ""Lisbon"",
+                    ""arrival_time"": ""22:25"",
+                    ""departure_city"": ""Paris"",
+                    ""departure_time"": ""20:45""
+                },
+                {
+                    ""logo"": ""https://r-xx.bstatic.com/data/airlines_logo/AF.png"",
+                    ""price"": 513.44,
+                    ""airline"": ""Air France"",
+                    ""currency"": ""CAD"",
+                    ""duration"": ""2h40m"",
+                    ""booking_url"": ""https://www.skyscanner.fr/transport/flights/cdg/lis/250512/250518/?adults=1&children=0&cabinclass=economy"",
+                    ""arrival_city"": ""Lisbon"",
+                    ""arrival_time"": ""17:50"",
+                    ""departure_city"": ""Paris"",
+                    ""departure_time"": ""16:10""
+                },
+                {
+                    ""logo"": ""https://r-xx.bstatic.com/data/airlines_logo/AF.png"",
+                    ""price"": 706.11,
+                    ""airline"": ""Air France"",
+                    ""currency"": ""CAD"",
+                    ""duration"": ""2h35m"",
+                    ""booking_url"": ""https://www.skyscanner.fr/transport/flights/cdg/lis/250512/250518/?adults=1&children=0&cabinclass=economy"",
+                    ""arrival_city"": ""Lisbon"",
+                    ""arrival_time"": ""14:50"",
+                    ""departure_city"": ""Paris"",
+                    ""departure_time"": ""13:15""
+                }
+            ]
+        },
+        ""hotels"": [
+            {
+                ""name"": ""Pestana Lisboa Vintage City Center Suites"",
+                ""room"": ""Private suite – 28 m²: 3 beds • 1 bedroom • 1 living room • 1 bathroom"",
+                ""photo"": ""https://cf.bstatic.com/xdata/images/hotel/max1280x900/536542235.jpg?k=7615c3ef22d5bac5fbc7e123bbd952c0d3a6dc0ac5a7c45d77194f038ee9ee7e&o="",
+                ""price"": 241.97,
+                ""total"": 1451.83,
+                ""nights"": 6,
+                ""rating"": 8.3,
+                ""address"": ""Rua Braamcamp 7"",
+                ""currency"": ""€"",
+                ""booking_url"": ""https://www.booking.com/hotel/pt/pestana-lisboa-vintage-city-center-suites.html""
+            },
+            {
+                ""name"": ""Goodmorning Solo Traveller Hostel"",
+                ""room"": ""Bed in dormitory: 1 bed"",
+                ""photo"": ""https://cf.bstatic.com/xdata/images/hotel/max1280x900/226181222.jpg?k=4f726101d2b70364cc4d1bf4384ce6cd6c3e711ff5924f805c758839c971f3f9&o="",
+                ""price"": 48.74,
+                ""total"": 292.42,
+                ""nights"": 6,
+                ""rating"": 9.2,
+                ""address"": ""Praça dos Restauradores 65, 2º floor"",
+                ""currency"": ""€"",
+                ""booking_url"": ""https://www.booking.com/hotel/pt/goodmorning-hostel.html""
+            },
+            {
+                ""name"": ""We Hate F Tourists"",
+                ""room"": ""Bed in dormitory: 1 bed"",
+                ""photo"": ""https://cf.bstatic.com/xdata/images/hotel/max1280x900/347519793.jpg?k=06d06a0f153684d8c4667c56c8131081a099c8b711b72f95117a734e90fce19e&o="",
+                ""price"": 48,
+                ""total"": 288,
+                ""nights"": 6,
+                ""rating"": 9.1,
+                ""address"": ""Rua Capitão Renato Baptista 88"",
+                ""currency"": ""€"",
+                ""booking_url"": ""https://www.booking.com/hotel/pt/we-hate-f-tourists-lisboa.html""
+            },
+            {
+                ""name"": ""room00 Lisboa Hostel"",
+                ""room"": ""Bed in dormitory: 1 bed"",
+                ""photo"": ""https://cf.bstatic.com/xdata/images/hotel/max1280x900/528779560.jpg?k=103471c1566541138d821ec1d5cd0870560e7fb46eaab4733aa7a6559ed6e540&o="",
+                ""price"": 37.6,
+                ""total"": 225.59,
+                ""nights"": 6,
+                ""rating"": 8.1,
+                ""address"": ""1 Rua Manuel Jesus Coelho"",
+                ""currency"": ""€"",
+                ""booking_url"": ""https://www.booking.com/hotel/pt/room00-lisboa-hostel.html""
+            },
+            {
+                ""name"": ""Alojamento Local Private Accommodation"",
+                ""room"": ""Room with shared bathroom: 1 bed"",
+                ""photo"": ""https://cf.bstatic.com/xdata/images/hotel/max1280x900/378409670.jpg?k=55a2ad61977dfaeed137ba9440a5de5fcc177be029ed560b6a98b98cfd7a7e87&o="",
+                ""price"": 31.61,
+                ""total"": 189.69,
+                ""nights"": 6,
+                ""rating"": 7.3,
+                ""address"": ""Rua Maria Andrade 42 ,3Dt"",
+                ""currency"": ""€"",
+                ""booking_url"": ""https://www.booking.com/hotel/pt/private-accomodation.html""
+            },
+            {
+                ""name"": ""We Love F Tourists"",
+                ""room"": ""Bed in dormitory: 1 bed"",
+                ""photo"": ""https://cf.bstatic.com/xdata/images/hotel/max1280x900/308657125.jpg?k=138c5763363c429415b5ff438cc579ad95a4333f5ed69d073867867039dd0fe5&o="",
+                ""price"": 43.67,
+                ""total"": 262,
+                ""nights"": 6,
+                ""rating"": 9,
+                ""address"": ""Rua dos Fanqueiros 267, 4ºesq."",
+                ""currency"": ""€"",
+                ""booking_url"": ""https://www.booking.com/hotel/pt/we-love-f-tourists.html""
+            },
+            {
+                ""name"": ""The Central House Lisbon Baixa"",
+                ""room"": ""Bed in dormitory: 1 bed"",
+                ""photo"": ""https://cf.bstatic.com/xdata/images/hotel/max1280x900/669887658.jpg?k=d6edfdff231ead68e462ab33e4ef579f47b3a550f43df927739e22b6d73fa15f&o="",
+                ""price"": 44.8,
+                ""total"": 268.8,
+                ""nights"": 6,
+                ""rating"": 8.7,
+                ""address"": ""Rua dos Fanqueiros 300"",
+                ""currency"": ""€"",
+                ""booking_url"": ""https://www.booking.com/hotel/pt/rodamon-lisboa-hostel.html""
+            },
+            {
+                ""name"": ""V Dinastia"",
+                ""room"": ""Private room: 1 bed"",
+                ""photo"": ""https://cf.bstatic.com/xdata/images/hotel/max1280x900/25504711.jpg?k=aa18fb915f74b64bfa1635097b23b1ee4869c06ec75e3f0b21b6e0abece179d2&o="",
+                ""price"": 68.5,
+                ""total"": 411,
+                ""nights"": 6,
+                ""rating"": 7.3,
+                ""address"": ""Rua Dom João V, 7"",
+                ""currency"": ""€"",
+                ""booking_url"": ""https://www.booking.com/hotel/pt/pensao-residencial-dinastia.html""
+            },
+            {
+                ""name"": ""Lisbon Serviced Apartments - Liberdade"",
+                ""room"": ""Entire apartment – 50 m²: 1 bed • 1 bedroom • 1 bathroom"",
+                ""photo"": ""https://cf.bstatic.com/xdata/images/hotel/max1280x900/42254811.jpg?k=47f8394b11690a9dbaa670b5d3e3d2df99546c87367eab0b26b35cece43fc4d4&o="",
+                ""price"": 132.92,
+                ""total"": 797.51,
+                ""nights"": 6,
+                ""rating"": 8.7,
+                ""address"": ""Rua Mouzinho da Silveira 34-36"",
+                ""currency"": ""€"",
+                ""booking_url"": ""https://www.booking.com/hotel/pt/lisbon-serviced-apartments.html""
+            }
+        ]
+    },
+    {
+        ""id"": 34,
+        ""user_id"": ""35e98231-62af-4c8a-b5fb-5d16d5b96ada"",
+        ""destination"": ""Tokyo"",
+        ""start_date"": ""2025-05-10"",
+        ""end_date"": ""2025-05-20"",
+        ""itinerary"": [
+            {
+                ""date"": ""2025-05-10"",
+                ""meals"": [
+                    {
+                        ""type"": ""Déjeuner"",
+                        ""notes"": ""Sushi haut de gamme, réservation conseillée"",
+                        ""place"": ""Sushi Dai (Tsukiji)"",
+                        ""price"": 50
+                    },
+                    {
+                        ""type"": ""Dîner"",
+                        ""notes"": ""Restaurant raffiné avec vue sur la scène"",
+                        ""place"": ""Kabuki-za Theatre Restaurant"",
+                        ""price"": 150
+                    }
+                ],
+                ""weather"": ""Ensoleillé"",
+                ""activities"": [
+                    {
+                        ""name"": ""Visite du marché aux poissons de Tsukiji (extérieurs)"",
+                        ""time"": ""Matin"",
+                        ""price"": 0,
+                        ""location"": ""Tsukiji"",
+                        ""description"": ""Observer l'activité matinale et l'enchère du thon (si possible)""
+                    },
+                    {
+                        ""name"": ""Exploration du quartier de Ginza"",
+                        ""time"": ""Après-midi"",
+                        ""price"": 50,
+                        ""location"": ""Ginza"",
+                        ""description"": ""Shopping de luxe, architecture élégante et galeries d'art""
+                    },
+                    {
+                        ""name"": ""Atelier de calligraphie japonaise"",
+                        ""time"": ""Soir"",
+                        ""price"": 100,
+                        ""location"": ""Shibuya"",
+                        ""description"": ""Apprendre les bases de la calligraphie avec un artiste local""
+                    },
+                    {
+                        ""name"": ""Dîner et spectacle de Kabuki"",
+                        ""time"": ""Soir"",
+                        ""price"": 200,
+                        ""location"": ""Ginza"",
+                        ""description"": ""Assister à une représentation traditionnelle de Kabuki""
+                    }
+                ]
+            },
+            {
+                ""date"": ""2025-05-11"",
+                ""meals"": [
+                    {
+                        ""type"": ""Déjeuner"",
+                        ""notes"": ""Restaurant élégant inspiré du film Kill Bill"",
+                        ""place"": ""Gonpachi Nishi-Azabu"",
+                        ""price"": 70
+                    },
+                    {
+                        ""type"": ""Dîner"",
+                        ""notes"": ""Ambiance chaleureuse et plats typiques"",
+                        ""place"": ""Izakaya Han no Daidokoro (Shibuya)"",
+                        ""price"": 40
+                    }
+                ],
+                ""weather"": ""Nuageux"",
+                ""activities"": [
+                    {
+                        ""name"": ""Visite du sanctuaire Meiji Jingu"",
+                        ""time"": ""Matin"",
+                        ""price"": 0,
+                        ""location"": ""Shibuya"",
+                        ""description"": ""Sanctuaire paisible dédié à l'empereur Meiji et à l'impératrice Shoken""
+                    },
+                    {
+                        ""name"": ""Découverte du quartier branché de Harajuku"",
+                        ""time"": ""Après-midi"",
+                        ""price"": 30,
+                        ""location"": ""Harajuku"",
+                        ""description"": ""Mode alternative, boutiques vintage et ambiance unique""
+                    },
+                    {
+                        ""name"": ""Expérience de cérémonie du thé traditionnelle"",
+                        ""time"": ""Après-midi"",
+                        ""price"": 80,
+                        ""location"": ""Shibuya"",
+                        ""description"": ""Apprendre les subtilités de la cérémonie du thé japonaise""
+                    },
+                    {
+                        ""name"": ""Dîner dans un Izakaya traditionnel"",
+                        ""time"": ""Soir"",
+                        ""price"": 60,
+                        ""location"": ""Shibuya"",
+                        ""description"": ""Découvrir la cuisine japonaise décontractée dans une ambiance chaleureuse""
+                    }
+                ]
+            },
+            {
+                ""date"": ""2025-05-12"",
+                ""meals"": [
+                    {
+                        ""type"": ""Déjeuner"",
+                        ""notes"": ""Ramen légendaire, portions généreuses"",
+                        ""place"": ""Ramen Jiro (multiple locations)"",
+                        ""price"": 20
+                    },
+                    {
+                        ""type"": ""Dîner"",
+                        ""notes"": ""Restaurant emblématique avec vue panoramique"",
+                        ""place"": ""New York Grill (Park Hyatt Tokyo)"",
+                        ""price"": 200
+                    }
+                ],
+                ""weather"": ""Ensoleillé"",
+                ""activities"": [
+                    {
+                        ""name"": ""Visite du Palais Impérial"",
+                        ""time"": ""Matin"",
+                        ""price"": 0,
+                        ""location"": ""Chiyoda"",
+                        ""description"": ""Découvrir le palais de la famille impériale japonaise""
+                    },
+                    {
+                        ""name"": ""Croisière sur la rivière Sumida"",
+                        ""time"": ""Après-midi"",
+                        ""price"": 30,
+                        ""location"": ""Sumida"",
+                        ""description"": ""Vue imprenable sur la ville depuis la rivière""
+                    },
+                    {
+                        ""name"": ""Exploration du quartier d'Asakusa"",
+                        ""time"": ""Après-midi"",
+                        ""price"": 20,
+                        ""location"": ""Asakusa"",
+                        ""description"": ""Temple Senso-ji, rues commerçantes Nakamise-dori""
+                    },
+                    {
+                        ""name"": "
+Ajouter favori;POST;/favorites/;Oui;-;Ajouter un itinéraire aux favoris;"{""destination"": ""..."", ""start_date"": ""..."", ""end_date"": ""..."", ""itinerary"": {...}, ""flights"": {...}}";"{""id"": ""..."", ...}"
+Supprimer favori;DELETE;/favorites/{id};Oui;-;Supprimer un favori existant;—;"{
+    ""message"": ""Favori supprimé""
+}"
+Admin data;GET;/admin/data;Oui;admin;Récupérer toutes les données côté admin;Rien, juste être connecté en tant qu'admin;"{
+    ""favorites"": [
+        {
+            ""id"": 3,
+            ""user_id"": ""KrA3t2q4rYbPpiTsYnMUSJ5NLUE3"",
+            ""destination"": ""Tokyo"",
+            ""start_date"": ""2025-04-14"",
+            ""end_date"": ""2025-04-28"",
+            ""itinerary"": [
+                {
+                    ""date"": ""2025-04-14"",
+                    ""meals"": [
+                        {
+                            ""type"": ""Dîner"",
+                            ""notes"": ""Restaurant japonais traditionnel haut de gamme."",
+                            ""place"": ""Ginza Kojyu"",
+                            ""price"": 150
+                        }
+                    ],
+                    ""weather"": ""Ensoleillé"",
+                    ""activities"": [
+                        {
+                            ""name"": ""Arrivée à Tokyo et check-in à l'hôtel Imperial"",
+                            ""time"": ""Après-midi"",
+                            ""price"": 0,
+                            ""location"": ""Marunouchi"",
+                            ""description"": ""Installation à l'hôtel et temps pour se reposer après le voyage.""
+                        },
+                        {
+                            ""name"": ""Dîner au restaurant japonais traditionnel Ginza Kojyu"",
+                            ""time"": ""Soir"",
+                            ""price"": 150,
+                            ""location"": ""Ginza"",
+                            ""description"": ""Expérience culinaire raffinée avec des plats traditionnels japonais.""
+                        }
+                    ]
+                },
+                {
+                    ""date"": ""2025-04-15"",
+                    ""meals"": [
+                        {
+                            ""type"": ""Déjeuner"",
+                            ""notes"": ""Cuisine japonaise simple et délicieuse."",
+                            ""place"": ""Restaurant local à Shibuya"",
+                            ""price"": 30
+                        },
+                        {
+                            ""type"": ""Dîner"",
+                            ""notes"": ""Restaurant gastronomique avec vue imprenable."",
+                            ""place"": ""New York Grill"",
+                            ""price"": 200
+                        }
+                    ],
+                    ""weather"": ""Ensoleillé"",
+                    ""activities"": [
+                        {
+                            ""name"": ""Visite du sanctuaire Meiji Jingu"",
+                            ""time"": ""Matin"",
+                            ""price"": 0,
+                            ""location"": ""Shibuya"",
+                            ""description"": ""Sanctuaire paisible dédié à l'empereur Meiji et à l'impératrice Shoken.""
+                        },
+                        {
+                            ""name"": ""Shopping et exploration de Shibuya"",
+                            ""time"": ""Après-midi"",
+                            ""price"": 50,
+                            ""location"": ""Shibuya"",
+                            ""description"": ""Flâner dans les rues animées de Shibuya, célèbre pour son intersection.""
+                        },
+                        {
+                            ""name"": ""Dîner avec vue panoramique au restaurant New York Grill"",
+                            ""time"": ""Soir"",
+                            ""price"": 200,
+                            ""location"": ""Shinjuku"",
+                            ""description"": ""Restaurant élégant avec vue imprenable sur la ville.""
+                        }
+                    ]
+                },
+                {
+                    ""date"": ""2025-04-16"",
+                    ""meals"": [
+                        {
+                            ""type"": ""Déjeuner"",
+                            ""notes"": ""Petit café charmant près du musée."",
+                            ""place"": ""Café près du Musée Ghibli"",
+                            ""price"": 25
+                        },
+                        {
+                            ""type"": ""Dîner"",
+                            ""notes"": ""Plats préparés lors du cours."",
+                            ""place"": ""Restaurant inclus dans le cours de cuisine"",
+                            ""price"": 0
+                        }
+                    ],
+                    ""weather"": ""Nuageux"",
+                    ""activities"": [
+                        {
+                            ""name"": ""Visite du Musée Ghibli"",
+                            ""time"": ""Matin"",
+                            ""price"": 25,
+                            ""location"": ""Mitaka"",
+                            ""description"": ""Découvrir l'univers magique du Studio Ghibli, célèbre pour ses films d'animation.""
+                        },
+                        {
+                            ""name"": ""Exploration du quartier de Harajuku"",
+                            ""time"": ""Après-midi"",
+                            ""price"": 30,
+                            ""location"": ""Harajuku"",
+                            ""description"": ""Découvrir la mode et la culture unique de Harajuku, notamment Takeshita Street.""
+                        },
+                        {
+                            ""name"": ""Cours de cuisine japonaise"",
+                            ""time"": ""Soir"",
+                            ""price"": 180,
+                            ""location"": ""Cours privé"",
+                            ""description"": ""Apprendre à préparer des plats japonais traditionnels.""
+                        }
+                    ]
+                },
+                {
+                    ""date"": ""2025-04-17"",
+                    ""meals"": [
+                        {
+                            ""type"": ""Déjeuner"",
+                            ""notes"": ""Nourriture simple et rapide."",
+                            ""place"": ""Restaurant dans Ueno Park"",
+                            ""price"": 20
+                        },
+                        {
+                            ""type"": ""Dîner"",
+                            ""notes"": ""Restaurant de sushi réputé."",
+                            ""place"": ""Sushi Dai"",
+                            ""price"": 100
+                        }
+                    ],
+                    ""weather"": ""Pluie légère"",
+                    ""activities"": [
+                        {
+                            ""name"": ""Visite du Tokyo National Museum"",
+                            ""time"": ""Matin"",
+                            ""price"": 15,
+                            ""location"": ""Ueno Park"",
+                            ""description"": ""Découvrir l'art et l'histoire du Japon à travers une vaste collection.""
+                        },
+                        {
+                            ""name"": ""Exploration d'Ueno Park"",
+                            ""time"": ""Après-midi"",
+                            ""price"": 0,
+                            ""location"": ""Ueno Park"",
+                            ""description"": ""Se promener dans Ueno Park, un grand parc avec des musées, des temples et un zoo.""
+                        },
+                        {
+                            ""name"": ""Dîner au restaurant Sushi Dai"",
+                            ""time"": ""Soir"",
+                            ""price"": 100,
+                            ""location"": ""Tsukiji"",
+                            ""description"": ""Déguster des sushis frais et de haute qualité.""
+                        }
+                    ]
+                },
+                {
+                    ""date"": ""2025-04-18"",
+                    ""meals"": [
+                        {
+                            ""type"": ""Déjeuner"",
+                            ""notes"": ""Fruits de mer frais."",
+                            ""place"": ""Restaurant près du marché de Tsukiji"",
+                            ""price"": 30
+                        },
+                        {
+                            ""type"": ""Dîner"",
+                            ""notes"": ""Expérience gastronomique de luxe."",
+                            ""place"": ""Restaurant étoilé Michelin (à réserver)"",
+                            ""price"": 300
+                        }
+                    ],
+                    ""weather"": ""Ensoleillé"",
+                    ""activities"": [
+                        {
+                            ""name"": ""Visite du marché aux poissons de Tsukiji (extérieur)"",
+                            ""time"": ""Matin"",
+                            ""price"": 0,
+                            ""location"": ""Tsukiji"",
+                            ""description"": ""Explorer l'atmosphère animée du marché aux poissons, même si la vente en gros a déménagé.""
+                        },
+                        {
+                            ""name"": ""Croisière sur la baie de Tokyo"",
+                            ""time"": ""Après-midi"",
+                            ""price"": 50,
+                            ""location"": ""Baie de Tokyo"",
+                            ""description"": ""Profiter d'une vue imprenable sur la ville depuis la baie.""
+                        },
+                        {
+                            ""name"": ""Dîner au restaurant étoilé Michelin"",
+                            ""time"": ""Soir"",
+                            ""price"": 300,
+                            ""location"": ""Variable selon réservation"",
+                            ""description"": ""Expérience culinaire gastronomique exceptionnelle.""
+                        }
+                    ]
+                },
+                {
+                    ""date"": ""2025-04-19"",
+                    ""meals"": [
+                        {
+                            ""type"": ""Déjeuner"",
+                            ""notes"": ""Cuisine traditionnelle japonaise."",
+                            ""place"": ""Restaurant local à Asakusa"",
+                            ""price"": 25
+                        },
+                        {
+                            ""type"": ""Dîner"",
+                            ""notes"": ""Nourriture simple avant le spectacle."",
+                            ""place"": ""Restaurant près du Robot Restaurant"",
+                            ""price"": 50
+                        }
+                    ],
+                    ""weather"": ""Nuageux"",
+                    ""activities"": [
+                        {
+                            ""name"": ""Visite du quartier d'Asakusa"",
+                            ""time"": ""Matin"",
+                            ""price"": 0,
+                            ""location"": ""Asakusa"",
+                            ""description"": ""Explorer le temple Senso-ji et les rues traditionnelles d'Asakusa.""
+                        },
+                        {
+                            ""name"": ""Promenade en rickshaw à Asakusa"",
+                            ""time"": ""Après-midi"",
+                            ""price"": 80,
+                            ""location"": ""Asakusa"",
+                            ""description"": ""Découvrir le quartier d'une manière unique et authentique.""
+                        },
+                        {
+                            ""name"": ""Soirée au Robot Restaurant"",
+                            ""time"": ""Soir"",
+                            ""price"": 100,
+                            ""location"": ""Shinjuku"",
+                            ""description"": ""Spectacle déjanté et surréaliste.""
+                        }
+                    ]
+                },
+                {
+                    ""date"": ""2025-04-20"",
+                    ""meals"": [
+                        {
+                            ""type"": ""Petit-déjeuner"",
+                            ""notes"": ""Petit-déjeuner buffet."",
+                            ""place"": ""Hôtel Imperial"",
+                            ""price"": 30
+                        },
+                        {
+                            ""type"": ""Déjeuner"",
+                            ""notes"": ""Selon vos envies."",
+                            ""place"": ""Restaurant au choix"",
+                            ""price"": 30
+                        },
+                        {
+                            ""type"": ""Dîner"",
+                            ""notes"": ""Selon vos envies."",
+                            ""place"": ""Restaurant au choix"",
+                            ""price"": 100
+                        }
+                    ],
+                    ""weather"": ""Ensoleillé"",
+                    ""activities"": [
+                        {
+                            ""name"": ""Journée libre pour exploration personnelle"",
+                            ""time"": ""Toute la journée"",
+                            ""price"": 50,
+                            ""location"": ""Au choix"",
+                            ""description"": ""Temps pour explorer un quartier qui vous intéresse ou refaire une activité préférée.""
+                        }
+                    ]
+                },
+                {
+                    ""date"": ""2025-04-21"",
+                    ""meals"": [
+                        {
+                            ""type"": ""Déjeuner"",
+                            ""notes"": ""Café moderne et élégant."",
+                            ""place"": ""Café près du Mori Art Museum"",
+                            ""price"": 20
+                        },
+                        {
+                            ""type"": ""Dîner"",
+                            ""notes"": ""Ambiance conviviale et plats variés."",
+                            ""place"": ""Izakaya traditionnel"",
+                            ""price"": 70
+                        }
+                    ],
+                    ""weather"": ""Pluie légère"",
+                    ""activities"": [
+                        {
+                            ""name"": ""Visite du Mori Art Museum"",
+                            ""time"": ""Matin"",
+                            ""price"": 25,
+                            ""location"": ""Roppongi"",
+                            ""description"": ""Découvrir l'art contemporain avec une vue panoramique sur la ville.""
+                        },
+                        {
+                            ""name"": ""Shopping à Ginza"",
+                            ""time"": ""Après-midi"",
+                            ""price"": 100,
+                            ""location"": ""Ginza"",
+                            ""description"": ""Flâner dans les boutiques de luxe de Ginza.""
+                        },
+                        {
+                            ""name"": ""Dîner dans un Izakaya traditionnel"",
+                            ""time"": ""Soir"",
+                            ""price"": 70,
+                            ""location"": ""Shibuya"",
+                            ""description"": ""Découvrir la culture des Izakayas avec des tapas et des boissons.""
+                        }
+                    ]
+                },
+                {
+                    ""date"": ""2025-04-22"",
+                    ""meals"": [
+                        {
+                            ""type"": ""Petit-déjeuner"",
+                            ""notes"": ""Petit-déjeuner buffet."",
+                            ""place"": ""Hôtel Imperial"",
+                            ""price"": 30
+                        },
+                        {
+                            ""type"": ""Déjeuner"",
+                            ""notes"": ""Cuisine locale."",
+                            ""place"": ""Restaurant à Hakone"",
+                            ""price"": 40
+                        },
+                        {
+                            ""type"": ""Dîner"",
+                            ""notes"": ""Repas léger après l'excursion."",
+                            ""place"": ""Restaurant près de l'hôtel"",
+                            ""price"": 50
+                        }
+                    ],
+                    ""weather"": ""Ensoleillé"",
+                    ""activities"": [
+                        {
+                            ""name"": ""Excursion d'une journée à Hakone"",
+                            ""time"": ""Toute la journée"",
+                            ""price"": 150,
+                            ""location"": ""Hakone"",
+                            ""description"": ""Découvrir le Mont Fuji, les sources chaudes et les paysages magnifiques d'Hakone.""
+                        }
+                    ]
+                },
+                {
+                    ""date"": ""2025-04-23"",
+                    ""meals"": [
+                        {
+                            ""type"": ""Déjeuner"",
+                            ""notes"": ""Nourriture rapide et pratique."",
+                            ""place"": ""Restaurant à Odaiba"",
+                            ""price"": 30
+                        },
+                        {
+                            ""type"": ""Dîner"",
+                            ""notes"": ""Dernier repas avec vue imprenable."",
+                            ""place"": ""Restaurant avec vue sur la baie"",
+                            ""price"": 120
+                        }
+                    ],
+                    ""weather"": ""Nuageux"",
+                    ""activities"": [
+                        {
+                            ""name"": ""Visite du TeamLab Borderless"",
+                            ""time"": ""Matin"",
+                            ""price"": 40,
+                            ""location"": ""Odaiba"",
+                            ""description"": ""Expérience immersive et interactive d'art numérique.""
+                        },
+                        {
+                            ""name"": ""Exploration d'Odaiba"",
+                            ""time"": ""Après-midi"",
+                            ""price"": 20,
+                            ""location"": ""Odaiba"",
+                            ""description"": ""Découvrir l'île artificielle d'Odaiba, avec ses attractions et sa vue sur la ville.""
+                        },
+                        {
+                            ""name"": ""Dîner au restaurant avec vue sur la baie de Tokyo"",
+                            ""time"": ""Soir"",
+                            ""price"": 120,
+                            ""location"": ""Odaiba"",
+                            ""description"": ""Profiter d'un dernier dîner avec vue panoramique.""
+                        }
+                    ]
+                },
+                {
+                    ""date"": ""2025-04-24"",
+                    ""meals"": [
+                        {
+                            ""type"": ""Déjeuner"",
+                            ""notes"": ""Cuisine simple et authentique."",
+                            ""place"": ""Restaurant local à Yanaka"",
+                            ""price"": 25
+                        },
+                        {
+                            ""type"": ""Dîner"",
+                            ""notes"": ""Dernier repas à Tokyo."",
+                            ""place"": ""Restaurant au choix"",
+                            ""price"": 50
+                        }
+                    ],
+                    ""weather"": ""Ensoleillé"",
+                    ""activities"": [
+                        {
+                            ""name"": ""Visite du quartier de Yanaka"",
+                            ""time"": ""Matin"",
+                            ""price"": 0,
+                            ""location"": ""Yanaka"",
+                            ""description"": ""Explorer un quartier résidentiel traditionnel avec ses temples et ses ruelles charmantes.""
+                        },
+                        {
+                            ""name"": ""Shopping de souvenirs"",
+                            ""time"": ""Après-midi"",
+                            ""price"": 50,
+                            ""location"": ""Ginza ou Shibuya"",
+                            ""description"": ""Acheter des souvenirs dans les boutiques locales.""
+                        }
+                    ]
+                },
+                {
+                    ""date"": ""2025-04-25"",
+                    ""meals"": [
+                        {
+                            ""type"": ""Petit-déjeuner"",
+                            ""notes"": ""Dernier petit-déjeuner."",
+                            ""place"": ""Hôtel Imperial ou aéroport"",
+                            ""price"": 30
+                        }
+                    ],
+                    ""weather"": ""Nuageux"",
+                    ""activities"": [
+                        {
+                            ""name"": ""Départ de Tokyo"",
+                            ""time"": ""Matin"",
+                            ""price"": 0,
+                            ""location"": ""Aéroport de Narita ou Haneda"",
+                            ""description"": ""Transfert vers l'aéroport pour le vol retour.""
+                        }
+                    ]
+                }
+            ],
+            ""created_at"": ""2025-04-11T19:38:41.225284"",
+            ""flights"": {
+                ""return"": [
+                    {
+                        ""logo"": ""https://r-xx.bstatic.com/data/airlines_logo/TK.png"",
+                        ""price"": 1118.13,
+                        ""airline"": ""Turkish Airlines"",
+                        ""currency"": ""EUR"",
+                        ""duration"": ""21h15m"",
+                        ""booking_url"": ""https://www.google.com/flights?hl=en#flt=HND.CDG.2025-04-28"",
+                        ""arrival_city"": ""Paris"",
+                        ""arrival_time"": ""22:30"",
+                        ""departure_city"": ""Tokyo"",
+                        ""departure_time"": ""08:15""
+                    },
+                    {
+                        ""logo"": ""https://r-xx.bstatic.com/data/airlines_logo/AF.png"",
+                        ""price"": 1671.15,
+                        ""airline"": ""Air France"",
+                        ""currency"": ""EUR"",
+                        ""duration"": ""14h45m"",
+                        ""booking_url"": ""https://www.google.com/flights?hl=en#flt=HND.CDG.2025-04-28"",
+                        ""arrival_city"": ""Paris"",
+                        ""arrival_time"": ""16:35"",
+                        ""departure_city"": ""Tokyo"",
+                        ""departure_time"": ""08:50""
+                    },
+                    {
+                        ""logo"": ""https://r-xx.bstatic.com/data/airlines_logo/TK.png"",
+                        ""price"": 945.02,
+                        ""airline"": ""Turkish Airlines"",
+                        ""currency"": ""EUR"",
+                        ""duration"": ""32h45m"",
+                        ""booking_url"": ""https://www.google.com/flights?hl=en#flt=HND.CDG.2025-04-28"",
+                        ""arrival_city"": ""Paris"",
+                        ""arrival_time"": ""10:00"",
+                        ""departure_city"": ""Tokyo"",
+                        ""departure_time"": ""08:15""
+                    },
+                    {
+                        ""logo"": ""https://r-xx.bstatic.com/data/airlines_logo/TK.png"",
+                        ""price"": 945.02,
+                        ""airline"": ""Turkish Airlines"",
+                        ""currency"": ""EUR"",
+                        ""duration"": ""35h35m"",
+                        ""booking_url"": ""https://www.google.com/flights?hl=en#flt=HND.CDG.2025-04-28"",
+                        ""arrival_city"": ""Paris"",
+                        ""arrival_time"": ""12:50"",
+                        ""departure_city"": ""Tokyo"",
+                        ""departure_time"": ""08:15""
+                    },
+                    {
+                        ""logo"": ""https://r-xx.bstatic.com/data/airlines_logo/SQ.png"",
+                        ""price"": 1393.94,
+                        ""airline"": ""Singapore Airlines"",
+                        ""currency"": ""EUR"",
+                        ""duration"": ""21h30m"",
+                        ""booking_url"": ""https://www.google.com/flights?hl=en#flt=HND.CDG.2025-04-28"",
+                        ""arrival_city"": ""Paris"",
+                        ""arrival_time"": ""07:35"",
+                        ""departure_city"": ""Tokyo"",
+                        ""departure_time"": ""17:05""
+                    }
+                ],
+                ""outbound"": [
+                    {
+                        ""logo"": ""https://r-xx.bstatic.com/data/airlines_logo/TG.png"",
+                        ""price"": 517.09,
+                        ""airline"": ""Thai Airways"",
+                        ""currency"": ""EUR"",
+                        ""duration"": ""24h30m"",
+                        ""booking_url"": ""https://www.google.com/flights?hl=en#flt=CDG.HND.2025-04-14"",
+                        ""arrival_city"": ""Tokyo"",
+                        ""arrival_time"": ""21:10"",
+                        ""departure_city"": ""Paris"",
+                        ""departure_time"": ""13:40""
+                    },
+                    {
+                        ""logo"": ""https://r-xx.bstatic.com/data/airlines_logo/TG.png"",
+                        ""price"": 537.9,
+                        ""airline"": ""Thai Airways"",
+                        ""currency"": ""EUR"",
+                        ""duration"": ""34h15m"",
+                        ""booking_url"": ""https://www.google.com/flights?hl=en#flt=CDG.HND.2025-04-14"",
+                        ""arrival_city"": ""Tokyo"",
+                        ""arrival_time"": ""06:55"",
+                        ""departure_city"": ""Paris"",
+                        ""departure_time"": ""13:40""
+                    },
+                    {
+                        ""logo"": ""https://r-xx.bstatic.com/data/airlines_logo/NH.png"",
+                        ""price"": 1283.71,
+                        ""airline"": ""All Nippon Airways"",
+                        ""currency"": ""EUR"",
+                        ""duration"": ""13h35m"",
+                        ""booking_url"": ""https://www.google.com/flights?hl=en#flt=CDG.HND.2025-04-14"",
+                        ""arrival_city"": ""Tokyo"",
+                        ""arrival_time"": ""15:55"",
+                        ""departure_city"": ""Paris"",
+                        ""departure_time"": ""19:20""
+                    },
+                    {
+                        ""logo"": ""https://r-xx.bstatic.com/data/airlines_logo/MU.png"",
+                        ""price"": 893.21,
+                        ""airline"": ""China Eastern Airlines"",
+                        ""currency"": ""EUR"",
+                        ""duration"": ""19h25m"",
+                        ""booking_url"": ""https://www.google.com/flights?hl=en#flt=CDG.HND.2025-04-14"",
+                        ""arrival_city"": ""Tokyo"",
+                        ""arrival_time"": ""15:50"",
+                        ""departure_city"": ""Paris"",
+                        ""departure_time"": ""13:25""
+                    },
+                    {
+                        ""logo"": ""https://r-xx.bstatic.com/data/airlines_logo/AF.png"",
+                        ""price"": 1330.49,
+                        ""airline"": ""Air France"",
+                        ""currency"": ""EUR"",
+                        ""duration"": ""13h25m"",
+                        ""booking_url"": ""https://www.google.com/flights?hl=en#flt=CDG.HND.2025-04-14"",
+                        ""arrival_city"": ""Tokyo"",
+                        ""arrival_time"": ""05:55"",
+                        ""departure_city"": ""Paris"",
+                        ""departure_time"": ""09:30""
+                    }
+                ]
+            },
+            ""hotels"": [
+                {
+                    ""url"": ""https://www.booking.com/hotel/jp/toseihoterukokoneqian-cao-zang-qian.html"",
+                    ""name"": ""Tosei Hotel Cocone Asakusa Kuramae"",
+                    ""pool"": ""Non"",
+                    ""room"": ""<b>Hotel room</b>: 1 bed"",
+                    ""image"": ""https://cf.bstatic.com/xdata/images/hotel/max1280x900/262899998.jpg?k=f46b02b8e9dc835e2e46978d4f108e769ab0bef0847eb4b613abb2dd8a3b9578&o="",
+                    ""price"": 9903,
+                    ""rating"": 8.6,
+                    ""address"": ""Taitoku Komagata 2-3-3 "",
+                    ""distance"": 10,
+                    ""breakfast"": ""?""
+                },
+                {
+                    ""url"": ""https://www.booking.com/hotel/jp/apa-hotel-higashi-nihombashi-ekimae.html"",
+                    ""name"": ""APA Hotel Higashi Nihombashi Ekimae"",
+                    ""pool"": ""Non"",
+                    ""room"": ""<b>Hotel room</b>: 1 bed"",
+                    ""image"": ""https://cf.bstatic.com/xdata/images/hotel/max1280x900/38742708.jpg?k=8f84f015f9e2fe50df10a99723029f3832a45b16044443833178aee1685b65aa&o="",
+                    ""price"": 10768,
+                    ""rating"": 7.8,
+                    ""address"": ""Chuo-ku Higashinihombashi 3-12-14"",
+                    ""distance"": 8.1,
+                    ""breakfast"": ""?""
+                },
+                {
+                    ""url"": ""https://www.booking.com/hotel/jp/apahoteru-shang-ye-yi-qian.html"",
+                    ""name"": ""APA Hotel Ueno Ekimae"",
+                    ""pool"": ""Non"",
+                    ""room"": ""<b>Hotel room</b>: 1 bed"",
+                    ""image"": ""https://cf.bstatic.com/xdata/images/hotel/max1280x900/553705267.jpg?k=d3fecd7622fef9f4592d2c1197a97a6be336d916b40bb2d7ed560c928d7ccbe4&o="",
+                    ""price"": 10820,
+                    ""rating"": 8,
+                    ""address"": ""Taito-ku Higashi Ueno 2-18-7"",
+                    ""distance"": 8.2,
+                    ""breakfast"": ""?""
+                },
+                {
+                    ""url"": ""https://www.booking.com/hotel/jp/apahoteru-liu-ben-mu-six.html"",
+                    ""name"": ""APA Hotel Roppongi SIX"",
+                    ""pool"": ""Non"",
+                    ""room"": ""<b>Hotel room</b>: 1 bed"",
+                    ""image"": ""https://cf.bstatic.com/xdata/images/hotel/max1280x900/263416635.jpg?k=a2e50c240fb7909dee49a2fb4fc12b901e557adefa3e5cb74e47ab9f4bd4c5b6&o="",
+                    ""price"": 10984,
+                    ""rating"": 8,
+                    ""address"": ""Minato-ku, Roppongi 2-3-11"",
+                    ""distance"": 3.7,
+                    ""breakfast"": ""?""
+                },
+                {
+                    ""url"": ""https://www.booking.com/hotel/jp/apa-hotel-and-resort-ryogoku-eki-tower.html"",
+                    ""name"": ""APA Hotel & Resort Ryogoku Eki Tower"",
+                    ""pool"": ""Oui"",
+                    ""room"": ""<b>Hotel room</b>: 1 bed"",
+                    ""image"": ""https://cf.bstatic.com/xdata/images/hotel/max1280x900/294505779.jpg?k=face75f1f0d3234367b87ac558fcb18200c36285d511ef401c78aba614f9d710&o="",
+                    ""price"": 10976,
+                    ""rating"": 8.2,
+                    ""address"": ""Sumida-ku Yokoami 1-11-10"",
+                    ""distance"": 9.7,
+                    ""breakfast"": ""?""
+                },
+                {
+                    ""url"": ""https://www.booking.com/hotel/jp/apa-nihonbashi-hamachoeki-minami.html"",
+                    ""name"": ""APA Hotel Nihonbashi Hamacho Ekiminami"",
+                    ""pool"": ""Non"",
+                    ""room"": ""<b>Hotel room</b>: 1 bed"",
+                    ""image"": ""https://cf.bstatic.com/xdata/images/hotel/max1280x900/44340233.jpg?k=469138e080662e01b9b7788aa30e4a0a239a9ab0bf9061bef4385efd4faa2b46&o="",
+                    ""price"": 10944,
+                    ""rating"": 7.8,
+                    ""address"": ""Chuo-ku Nihombashi Hamacho 3-43-8"",
+                    ""distance"": 9.1,
+                    ""breakfast"": ""?""
+                },
+                {
+                    ""url"": ""https://www.booking.com/hotel/jp/apahoteru-shang-ye-yi-nan.html"",
+                    ""name"": ""APA Hotel Ueno Ekiminami"",
+                    ""pool"": ""Non"",
+                    ""room"": ""<b>Hotel room</b>: 1 bed"",
+                    ""image"": ""https://cf.bstatic.com/xdata/images/hotel/max1280x900/377699210.jpg?k=526a3d30078bdb2b17c1dc9a16ef5260bc97a3fba2668ec1680a07d7eaaf9e5e&o="",
+                    ""price"": 11117,
+                    ""rating"": 8.3,
+                    ""address"": ""Daito-ku Ueno 6-7-21"",
+                    ""distance"": 8,
+                    ""breakfast"": ""?""
+                },
+                {
+                    ""url"": ""https://www.booking.com/hotel/jp/apa-hotel-hachoborieki-minami.html"",
+                    ""name"": ""APA Hotel Hatchobori Ekiminami"",
+                    ""pool"": ""Non"",
+                    ""room"": ""<b>Hotel room</b>: 1 bed"",
+                    ""image"": ""https://cf.bstatic.com/xdata/images/hotel/max1280x900/670797558.jpg?k=710e2ec199139eabab23659e7c6ae7d9d2a288a600d4b475b1c910dccee8a327&o="",
+                    ""price"": 11322,
+                    ""rating"": 7.8,
+                    ""address"": ""Chuo-ku Shintomi 1-14-7"",
+                    ""distance"": 7.1,
+                    ""breakfast"": ""?""
+                },
+                {
+                    ""url"": ""https://www.booking.com/hotel/jp/apa-hotel-akihabaraeki-kita.html"",
+                    ""name"": ""APA Hotel Akihabara Ekikita"",
+                    ""pool"": ""Non"",
+                    ""room"": ""<b>Hotel room</b>: 1 bed"",
+                    ""image"": ""https://cf.bstatic.com/xdata/images/hotel/max1280x900/279443223.jpg?k=4d1412fdd54d74de2b35c2e7b45b19512f7bfa18c7862498e1c5f3aa2599c5e8&o="",
+                    ""price"": 11448,
+                    ""rating"": 8.3,
+                    ""address"": ""Taito-ku Taito 1-29-2"",
+                    ""distance"": 7.4,
+                    ""breakfast"": ""?""
+                },
+                {
+                    ""url"": ""https://www.booking.com/hotel/jp/apa-tokyo-nishishinjuku-gochome-eki-tower.html"",
+                    ""name"": ""APA Hotel & Resort Nishishinjuku-Gochome-Eki Tower"""
+;;;;;;;
+https://backend-traveloo.onrender.com/;;;;;;;
