@@ -23,7 +23,7 @@ app = FastAPI(
 
 app.add_middleware(
     CORSMiddleware,
-    allow_origins=["https://traveloo.fr", "http://localhost:5173"],
+    allow_origins=["https://traveloo.fr", "http://localhost:5173", "https://client-traveloo.vercel.app"],
     allow_methods=["*"],
     allow_headers=["*"],
     allow_credentials=True,
